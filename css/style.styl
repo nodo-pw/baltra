@@ -366,6 +366,22 @@ section.contenido
 	-webkit-order 2
 	order 2
 
+.desktop_mb
+.mb
+	margin-bottom 18px !important
+
+.desktop_ml
+.ml
+	margin-left 13px !important
+
+.desktop_mr
+.mr
+	margin-right 13px !important
+
+.desktop_mt
+.mt
+	margin-top 18px !important
+
 .encabezado
 	align-items(center)
 	background casi__blanco
@@ -603,6 +619,9 @@ section.contenido
 		&--roja
 			bg color__rojo
 			color blanco
+		&--azul
+			bg #94b5bf
+			color #bad7e2
 	&__field
 		// -webkit-flex-shrink: 1
 		// font-size: f__uno
@@ -626,77 +645,17 @@ section.contenido
 			background color__fondo
 		&--correct
 			background #bae2c5
+		&--azul
+			background #bad7e2 !important
+			color #94b5bf !important
+			border-top-color #bad7e2 !important
+			border-left-color #bad7e2 !important
+			border-bottom-color #94b5bf !important
+			border-right-color #94b5bf !important
 	&__leyenda
 		color #757575
 		font-size 0.7rem
 		align-self(center)
-	&--no-editable
-		block()
-		margin: 0
-		padding 0.6rem 16px 6px
-		&:empty
-			&:before
-				content: '-- Vacío --'
-
-.no-desktop
-	hide()
-
-.desktop_mb
-.mb
-	margin-bottom 18px !important
-
-.desktop_ml
-.ml
-	margin-left 13px !important
-
-.desktop_mr
-.mr
-	margin-right 13px !important
-
-.desktop_mt
-.mt
-	margin-top 18px !important
-
-.login
-	align-items(center)
-	flex()
-	flex-direction(column)
-	&__barra
-		background url(imgs/svg_dividers/horizaontal_dividerline.svg) repeat left top
-		block()
-		height 100%
-		width 3%
-		&--izq
-			margin-right 35px
-		&--der
-			margin-left 35px
-	&__contenedor
-		// flex-grow(1)
-		border-bottom 10px solid color__rojo
-		border-top 10px solid color__rojo
-		height 100%
-		max-width 660px
-		width 100%
-	&__encabezado
-		margin 7vh 0
-		padding 7vh 0
-		relative()
-		&:after
-		&:before
-			absolute()
-			background url(imgs/svg_dividers/dividerline.svg) repeat left top
-			block()
-			content ''
-			height 3px
-			top 0
-			width 100%
-		&:after
-			top 100%
-		&:before
-			top 0
-	&__logo
-		img
-			width 340px
 
 .lightwindow
 	fixed()
@@ -738,6 +697,47 @@ section.contenido
 		font-size 1.25rem
 		font-weight 700
 		inter 1
+
+.login
+	align-items(center)
+	flex()
+	flex-direction(column)
+	&__barra
+		background url(imgs/svg_dividers/horizaontal_dividerline.svg) repeat left top
+		block()
+		height 100%
+		width 3%
+		&--izq
+			margin-right 35px
+		&--der
+			margin-left 35px
+	&__contenedor
+		// flex-grow(1)
+		border-bottom 10px solid color__rojo
+		border-top 10px solid color__rojo
+		height 100%
+		max-width 660px
+		width 100%
+	&__encabezado
+		margin 7vh 0
+		padding 7vh 0
+		relative()
+		&:after
+		&:before
+			absolute()
+			background url(imgs/svg_dividers/dividerline.svg) repeat left top
+			block()
+			content ''
+			height 3px
+			top 0
+			width 100%
+		&:after
+			top 100%
+		&:before
+			top 0
+	&__logo
+		img
+			width 340px
 
 .main
 	flex_grow(1)
@@ -790,6 +790,9 @@ section.contenido
 		transicion 0.3s all ease
 		&.visible
 			max-height 1000vh
+
+.no-desktop
+	hide()
 
 .section
 	height: 100vh
@@ -864,6 +867,10 @@ section.contenido
 	.bloque--cuarto
 	.bloque--tercio
 		width 49%
+
+@media screen and (min-width : med_query)
+	.desktop_txt--der
+		text-align right
 
 @media screen and (max-width : med_query)
 	*,
