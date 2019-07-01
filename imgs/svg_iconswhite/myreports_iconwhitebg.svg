@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="34px" viewBox="0 0 30 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>myreports_iconwhitebg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="myreports_iconwhitebg" fill="#4D4D4D" fill-rule="nonzero">
+            <path d="M28.7,31.8 L3.9,31.8 C3.5,31.8 3.1,31.5 3.1,31 L3.1,0.8 C3.1,0.3 3.5,0 3.9,0 L22.6,0 C22.8,0 23,0.1 23.1,0.2 L29.1,5.5 C29.3,5.6 29.4,5.8 29.4,6.1 L29.4,31.2 C29.4,31.5 29.1,31.8 28.7,31.8 Z M4.6,30.3 L27.9,30.3 L27.9,6.3 L22.3,1.4 L4.6,1.4 L4.6,30.3 Z" id="Shape"></path>
+            <g id="Group" opacity="0.5" transform="translate(0.000000, 2.000000)">
+                <path d="M26.5,31.9 L1.7,31.9 C1.3,31.9 0.9,31.6 0.9,31.1 L0.9,0.8 C0.9,0.4 1.2,-2.22044605e-16 1.7,-2.22044605e-16 C2.2,-2.22044605e-16 2.4,0.3 2.4,0.8 L2.4,30.4 L26.4,30.4 C26.8,30.4 27.2,30.7 27.2,31.2 C27.2,31.7 26.9,31.9 26.5,31.9 Z" id="Path"></path>
+            </g>
+            <path d="M28.7,6.8 L22.7,6.8 C22.3,6.8 21.9,6.5 21.9,6 L21.9,0.8 C21.9,0.5 22.1,0.2 22.3,0.1 C22.6,-1.2490009e-16 22.9,-1.2490009e-16 23.1,0.2 L29.1,5.5 C29.3,5.7 29.4,6 29.3,6.3 C29.2,6.6 29,6.8 28.7,6.8 Z M23.4,5.3 L26.7,5.3 L23.4,2.4 L23.4,5.3 Z" id="Shape"></path>
+            <path d="M18.3,8.2 C17.8,7.9 17.3,7.6 16.8,7.5 L16.8,9.3 C18.6,9.8 19.4,10.5 19.4,11.9 L19.4,11.9 C19.4,13.2 18.4,14.1 16.9,14.3 L16.9,15.5 L15.7,15.5 L15.7,14.3 C14.7,14.2 13.7,13.8 12.9,13.2 L13.8,11.8 C14.4,12.3 15,12.6 15.8,12.8 L15.8,10.9 C14.1,10.4 13.2,9.8 13.2,8.4 L13.2,8.4 C13.2,7.1 14.2,6.2 15.7,6 L15.7,5.2 L16.9,5.2 L16.9,5.9 C17.8,6 18.5,6.3 19.1,6.8 L18.3,8.2 Z M15.7,9 L15.7,7.4 C15.1,7.5 14.9,7.8 14.9,8.1 L14.9,8.1 C14.8,8.5 15,8.8 15.7,9 Z M16.8,11.1 L16.8,12.8 C17.4,12.7 17.7,12.5 17.7,12 L17.7,12 C17.6,11.6 17.4,11.3 16.8,11.1 Z" id="Shape"></path>
+            <g id="Group" opacity="0.5" transform="translate(6.000000, 18.000000)">
+                <rect id="Rectangle" x="0.7" y="0" width="6.7" height="1.5"></rect>
+            </g>
+            <rect id="Rectangle" x="6.7" y="21.2" width="19" height="1.5"></rect>
+            <rect id="Rectangle" x="6.7" y="23.6" width="3.1" height="1.5"></rect>
+            <g id="Group" opacity="0.5" transform="translate(10.000000, 23.000000)">
+                <rect id="Rectangle" x="0.7" y="0.6" width="3.1" height="1.5"></rect>
+            </g>
+            <rect id="Rectangle" x="14.7" y="23.6" width="3.1" height="1.5"></rect>
+            <g id="Group" opacity="0.5" transform="translate(18.000000, 23.000000)">
+                <rect id="Rectangle" x="0.6" y="0.6" width="3.1" height="1.5"></rect>
+            </g>
+            <rect id="Rectangle" x="22.6" y="23.6" width="3.1" height="1.5"></rect>
+            <rect id="Rectangle" x="6.7" y="26" width="3.1" height="1.5"></rect>
+            <g id="Group" opacity="0.5" transform="translate(10.000000, 26.000000)">
+                <rect id="Rectangle" x="0.7" y="0" width="3.1" height="1.5"></rect>
+            </g>
+            <rect id="Rectangle" x="14.7" y="26" width="3.1" height="1.5"></rect>
+            <g id="Group" opacity="0.5" transform="translate(18.000000, 26.000000)">
+                <rect id="Rectangle" x="0.6" y="0" width="3.1" height="1.5"></rect>
+            </g>
+            <rect id="Rectangle" x="22.6" y="26" width="3.1" height="1.5"></rect>
+        </g>
+    </g>
+</svg>
