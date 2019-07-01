@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Baltra - Reporte Básico</title>
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="theme-color" content="#C22026">
+</head>
+
+<body>
+	<header role="banner" class="encabezado bloques--reticula">
+		<div class="menu__hamb">
+			<button class="js--menu__hamb">
+				<img src="imgs/svg_othericons/hamburguericon.svg" alt="">
+			</button>
+		</div>
+		<div class="bloque--sidebar sidebar__logo franja--der">
+			<a href="#">
+				<img src="imgs/svg_interfaceelements/logobaltra--gris.svg" alt="Baltra">
+			</a>
+		</div>
+		<div class="encabezado__usuario contenido">
+			<figure class="encabezado__avatar franja--der">
+				<img src="imgs/svg_othericons/profileicon01.svg" alt="Usuario">
+			</figure>
+			<div class="encabezado__persona">
+				<span class="encabezado__nombre">Francisco Sevilla</span>
+				<span class="encabezado__rol">Administrador</span>
+			</div>
+			<div class="encabezado__menu">
+				<button class="encabezado__icono js--encabezado__icono">
+					<img src="/imgs/svg_interfaceelements/profilemenu.svg" alt="Menu">
+				</button>
+				<div class="encabezado__perfil js--encabezado__perfil">
+					<ul>
+						<li>
+							<button class="js--lightwindow_btn--perfil">Editar Mi Perfil</button>
+						</li>
+						<li>
+							<a href="">Logout</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main role='main' class="main bloques--flex">
+		<section class="contenido">
+
+			<header class="bloques--reticula mb">
+				<h1 class="bloque--fijo titulo--principal">
+					<figure>
+						<img src="/imgs/svg_iconswhite/basicreport_iconwhitebg.svg" alt="Reporte Básico" class="no-movil">
+						<img src="/imgs/svg_iconsdark/basicrespor_icondarkbg.svg" alt="Reporte Básico" class="no-desktop">
+					</figure>
+					<span class="">
+						Reporte Básico
+					</span>
+				</h1>
+				<div class="bloque--grow align--center bloques--reticula--derecha no-movil">
+					<span class="mr franja--der franja--izq"><button class="btn ml mr">Enviar</button></span>
+					<span class="mr franja--der"><button class="btn mr">Guardar</button></span>
+					<button class="btn--img"><img src="/imgs/svg_btns/nuevo/nuevo_btn01.svg" alt="Nuevo"></button>
+				</div>
+			</header>
+			
+			<hr class="franja">
+
+			<div class="bloques--reticula tablero">
+				<div class="bloque--grow mr tablero__principal">
+					<div class="bloques--reticula__renglon desktop_mb">
+						<div class="bloque--mitad movil_bloque--mitad">
+							<strong>Reporte</strong> | FSRA0001.1852
+						</div>
+						<div class="bloque--mitad desktop_txt--der movil_bloque--mitad">
+							<strong>Fecha</strong> | 29 / Abril / 2019
+						</div>
+						
+						<hr class="franja bloque--full no-desktop mt">
+
+						<div class="movil_bloque--full bloques--reticula">
+
+							<div class="bloque--grow align--center bloques--reticula--derecha no-desktop">
+								<span class="mr franja--der franja--izq"><button class="btn ml mr">Enviar</button></span>
+								<span class="mr franja--der"><button class="btn mr">Guardar</button></span>
+								<button class="btn--img"><img src="/imgs/svg_btns/nuevo/nuevo_btn01.svg" alt="Nuevo"></button>
+							</div>
+
+						</div>
+
+						<hr class="franja bloque--full no-desktop mt">
+					</div>
+
+					<div class="input__contenedor">
+						<label for="input_2" class="input__label input__label--der movil_input__label--izq bloque--30 mr">
+							Nombre del cliente
+						</label>
+						<select name="" id="" class="input__field bloque--13 movil_bloque--22 mr">
+							<option value="Srita.">Srita.</option>
+						</select>
+						<input type="text" name="" class="input__field bloque--grow" value="Selen Sedano" id="input_2" placeholder="Nombre del cliente">
+					</div>
+
+					<hr class="franja">
+
+					<div class="input__contenedor">
+						<label for="input_3" class="input__label input__label--der movil_input__label--izq bloque--30 mr">
+							Tipo de arrendamiento
+						</label>
+						<select name="" id="" class="input__field bloque--13 movil_bloque--22 mr">
+							<option value="Coche">Coche</option>
+						</select>
+						<input type="text" name="" class="input__field bloque--grow" value="Vento Confortline Manual" id="input_3" placeholder="Tipo de arrendamiento">
+					</div>
+
+					<div class="bloques--flex">
+						<label for="input_4" class="input__label input__label--der bloque--30 mr movil_input__label--izq">
+							Valor total
+						</label>
+						<div class="input__contenedor bloque--37 desktop_mr movil_bloque--full">
+							<input type="text" name="" class="input__field bloque--grow mr" value="230,000.00" id="input_4" placeholder="Valor total">
+							<select name="" id="" class="input__field bloque--30">
+								<option value="MXN">MXN</option>
+							</select>
+						</div>
+
+						<hr class="franja--vert mr bloque-h--40 no-movil">
+
+						<div class="input__contenedor bloque--grow movil_bloque--full">
+							<label for="input_5" class="input__label input__label--centrado bloque--fijo mr movil_input__label--izq">
+								Plazo
+							</label>
+							<select name="" id="input_5" class="input__field bloque--grow">
+								<option value="48 meses">48 meses</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="bloques--flex">
+						<label for="input_6" class="input__label input__label--der bloque--30 mr movil_bloque--50">
+							Comisión por apertura
+						</label>
+						<div class="input__contenedor bloque--37 movil_bloque--50 desktop_mr">
+							<input type="text" name="" class="input__field bloque--22 mr" value="3.00" id="input_6" placeholder="Comisión por apertura">
+							<span class="input__etiqueta mr">%</span>
+							<hr class="franja--vert mr bloque-h--40 va-t no-movil">
+							<input type="text" name="" class="input__field input__field--disabled  desktop_mr movil_bloque--58" disabled value="$ 2,000.00 MXN" id="" placeholder="">
+						</div>
+						<hr class="franja--vert mr bloque-h--40 no-movil">
+					</div>
+
+					<div class="bloques--flex">
+						<label for="input_7" class="input__label input__label--der bloque--30 mr movil_bloque--50">
+							Valor residual
+						</label>
+						<div class="input__contenedor bloque--37 movil_bloque--50 desktop_mr">
+							<input type="text" name="" class="input__field input__field--correct bloque--22 mr" value="35.00" id="input_7" placeholder="Valor residual">
+							<span class="input__etiqueta mr">%</span>
+							<hr class="franja--vert mr bloque-h--40 va-t no-movil">
+							<input type="text" name="" class="input__field input__field--correct  desktop_mr movil_bloque--58" disabled value="$ 70,000.00 MXN" id="" placeholder="">
+						</div>
+						<hr class="franja--vert mr bloque-h--40 no-movil">
+					</div>
+
+					<div class="bloques--flex">
+						<label for="input_8" class="input__label input__label--der bloque--30 mr movil_bloque--50">
+							Pago inicial
+						</label>
+						<div class="input__contenedor bloque--37 movil_bloque--50 desktop_mr">
+							<input type="text" name="" class="input__field input__field--correct bloque--22 mr" value="10.00" id="input_8" placeholder="Pago inicial">
+							<span class="input__etiqueta mr">%</span>
+							<hr class="franja--vert mr bloque-h--40 va-t no-movil">
+							<input type="text" name="" class="input__field input__field--correct  desktop_mr movil_bloque--58" disabled value="$ 28,000.00 MXN" id="" placeholder="">
+						</div>
+						<hr class="franja--vert mr bloque-h--40 no-movil">
+					</div>
+
+					<div class="bloques--flex">
+						<label for="input_9" class="input__label input__label--der bloque--30 mr movil_bloque--50">
+							Depósito en garantía
+						</label>
+						<input type="text" name="" class="input__field bloque--37 movil_bloque--50 mr" value="$ 28,000.00" id="input_9" placeholder="Depósito en garantía">
+						<hr class="franja--vert mr bloque-h--40 no-movil">
+					</div>
+
+					<hr class="franja">
+
+					<div class="bloques--flex">
+						<label for="input_11" class="input__label input__label--azul input__label--der bloque--30 desktop_mr movil_input__label--izq">
+							Equipo GPS por fuera
+						</label>
+						<input type="text" name="" class="input__field input__field--azul bloque--37 movil_bloque--full desktop_mr" disabled value="$ 28,000.00" id="input_11" placeholder="Equipo GPS por fuera">
+					</div>
+					<div class="bloques--flex">
+						<label for="input_12" class="input__label input__label--azul input__label--der bloque--30 desktop_mr movil_input__label--izq">
+							Llave Extra
+						</label>
+						<input type="text" name="" class="input__field input__field--azul bloque--37 movil_bloque--full desktop_mr" disabled value="$ 28,000.00" id="input_12" placeholder="Llave Extra">
+					</div>
+
+				</div>
+				<hr class="franja--vert mr">
+
+				<div class="bloque--fijo tablero__sidebar">
+					<div class="input__contenedor input__contenedor--vertical mb no-movil">
+						<label for="input_1" class="input__label bloque--full">
+							Nombre del vendedor
+						</label>
+						<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="Francisco Sevilla" id="input_1" placeholder="Nombre del vendedor">
+					</div>
+					<hr class="franja no-movil">
+					<div class="input__contenedor input__contenedor--vertical mb">
+						<label for="input_1" class="input__label input__label--roja bloque--full">
+							Mensualidad
+						</label>
+						<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="$ 0,000.00 MXN" id="input_1" placeholder="Mensualidad">
+					</div>
+					<hr class="franja no-movil">
+					<div class="input__contenedor input__contenedor--vertical mb">
+						<label for="input_1" class="input__label input__label--roja bloque--full">
+							Comisión por apertura
+						</label>
+						<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="$ 0,000.00 MXN" id="input_1" placeholder="Comisión por apertura">
+					</div>
+					<div class="bloques--reticula__renglon input__contenedor--vertical mb">
+						<label for="" class="input__label input__label--roja bloque--full movil_bloque--full">
+							Gastos de Arrendamientos
+						</label>
+						<div class="input__contenedor bloque--full movil_bloque--full">
+							<hr class="franja--vert mr bloque-h--40 va-t">
+							<span class="input__etiqueta mr">GA-I</span>
+							<input type="text" name="" class="input__field input__field--disabled  bloque--grow" disabled value="$ 2,000.00 MXN" id="" placeholder="">
+						</div>
+						<div class="input__contenedor bloque--full movil_bloque--full">
+							<hr class="franja--vert mr bloque-h--40 va-t">
+							<span class="input__etiqueta mr">GA-M</span>
+							<input type="text" name="" class="input__field input__field--disabled  bloque--grow" disabled value="$ 2,000.00 MXN" id="" placeholder="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<aside class="bloque--sidebar sidebar js--sidebar">
+			<div class="sidebar__hamb">
+				<button class="js--menu__hamb">
+					<img src="imgs/svg_othericons/hamburguericon--blanco.svg" alt="">
+				</button>
+			</div>
+			<nav class="sidebar__nav">
+				<ul>
+					<li>
+						<div class="bloques--reticula--centrado menu__btn">
+							<button class="js--menu__btn bloque--grow" data-menu="reportes"><div class="menu__link">Reportes</div></button>
+						</div>
+						<div class="menu__submenu js--submenu bloque--full" data-menu="reportes">
+							<ul>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/basicrespor_icondarkbg.svg" alt="basicrespor"></div>Reporte Básico
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="bloques--reticula--centrado menu__btn">
+							<button class="js--menu__btn bloque--grow" data-menu="archivo"><div class="menu__link">Archivo</div></button>
+							<div class="bloque--fijo">
+								<img src="/imgs/svg_othericons/statusicon_red.svg" alt="Status Red">
+							</div>
+						</div>
+						<div class="menu__submenu js--submenu bloque--full" data-menu="archivo">
+							<ul>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/myreports_icondarkbg.svg" alt="myreports"></div>Mis Reportes
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/completedreports_icondarkbg.svg" alt="completedreports"></div>Completados
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</aside>	
+	</main>
+
+	<footer id="" class="footer bloques--reticula">
+		<div class="bloque--sidebar sidebar__logo franja--der">
+			<a href="#">
+				<img src="imgs/svg_interfaceelements/logobaltra--blanco.svg" alt="Baltra">
+			</a>
+		</div>
+		<div class="bloques--reticula bloque--grow footer__contenido">
+			<div class="franja--der footer__link">
+				<a href="#">Términos & condiciones</a>
+			</div>
+			<div class="franja--der footer__link">
+				<a href="#">Políticas de privacidad</a>
+			</div>
+			<div class="franja--der footer__derechos">
+				<p>
+					GRUPO BALTRA TODOS LOS DERECHOS RESERVADOS
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<div class="lightwindow js--lightwindow--perfil bloques--renglones--centrado">
+		<div class="lightwindow__caja">
+			<header class="lightwindow__encabezado">
+				<h2 class="lightwindow__titulo">
+					Mi perfil
+				</h2>
+			</header>
+			<div class="lightwindow__contenido">
+				<div class="bloques--reticula mb">
+					<div class="bloque--fijo mr">
+						<img src="/imgs/svg_othericons/changeprofileicon.svg" alt="">
+					</div>
+					<div class="bloque--grow">
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Nombre
+							</label>
+							<input type="text" name="" class="input__field bloque--grow" value="Luis Díaz" id="form_name" placeholder="Nombre">
+						</div>
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Tipo de acceso
+							</label>
+							<input type="text" name="" class="input__field bloque--grow" value="Vendedor" id="form_name" placeholder="Tipo de acceso">
+						</div>
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Correo
+							</label>
+							<input type="email" name="" class="input__field bloque--grow" value="mail@baltra.mx" id="form_name" placeholder="Correo">
+						</div>
+					</div>
+				</div>
+				<hr class="franja">
+				<div class="input__contenedor bloque--full">
+					<div class="bloque--grow mr franjas_verticales"></div>
+					<label for="password" class="input__label input__label--chico input__label--left mr bloque--41">
+						Nueva Contraseña
+					</label>
+					<input type="password" name="" class="input__field bloque--30" id="password" placeholder="Nueva Contraseña">
+				</div>
+				<div class="input__contenedor bloque--full">
+					<div class="bloque--grow mr franjas_verticales"></div>
+					<label for="confirm_password" class="input__label input__label--chico input__label--left mr bloque--41">
+						Confirmar Contraseña
+					</label>
+					<input type="password" name="" class="input__field bloque--30" id="confirm_password" placeholder="Confirmar Contraseña">
+				</div>
+
+				<hr class="franja">
+				<div class="bloques--reticula--derecha">
+					<button class="btn js--lightwindow_btn--cerrar mr">Cancelar</button>
+					<input type="submit" value="Aceptar" class="btn">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lightwindow__bg js--lightwindow__bg"></div>
+
+</body>
+<script src="js/funciones-min.js"></script> 
+</html>

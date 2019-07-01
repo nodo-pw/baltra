@@ -627,7 +627,7 @@ section.contenido {
   display: block;
   content: '';
   height: 100%;
-  right: 0;
+  left: 0;
   top: 50%;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
