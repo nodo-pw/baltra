@@ -354,6 +354,14 @@ table
 		img
 			height 35px
 			width 35px
+	&--chico
+		padding 8px 10px !important
+		font-size 0.8rem
+
+.buscador
+	.input__field
+		margin-bottom 0
+		max-width 200px
 
 .contenido
 	width 100%
@@ -523,10 +531,15 @@ section.contenido
 			block()
 			content ''
 			height 100%
-			left 0
 			top 50%
 			transformar translate( 0, -50% )
 			width 3px
+	&--der
+		&:after
+			right 0
+	&--vert
+		&:after
+			left 0
 	&--izq
 		relative()
 		&:before
@@ -794,6 +807,9 @@ section.contenido
 .no-desktop
 	hide()
 
+.no-mb
+	margin-bottom 0 !important
+
 .section
 	height: 100vh
 
@@ -818,17 +834,86 @@ section.contenido
 // 	&__principal
 // 	&__sidebar
 
+.tabla
+	border 0
+	button
+		font-size 0.9rem
+		flex()
+		align-items(center)
+		justify-content(center)
+		margin 0 auto
+		img
+			margin-left 5px
+	td
+		padding 4px
+		text-align center
+		font-size 0.9rem
+		relative()
+		&:after
+			absolute()
+			content ''
+			height 60%
+			left 0
+			top 50%
+			transformar translate( 0, -50% )
+			width 1px
+		&:first-child
+			&:after
+				hide()
+	&__contenedor
+		overflow auto
+		max-height 50vh
+	&__encabezado
+		td
+			font-weight 700
+			// &:after
+			&:after
+				bg blanco
+		&--rojo
+			bg color__rojo
+			color blanco
+			button
+				color blanco
+		&--negro
+			bg #3a3c39
+			color blanco
+			button
+				color blanco
+	&__fila
+		&--verde
+			bg rgba(#22bf7c, 0.25) !important
+	&__filas
+		td
+			font-weight 600
+			// &:after
+			&:after
+				bg negro
+		tr
+			border-top 1px solid blanco
+			border-bottoma 1px solid #c1c1c1
+			&:nth-child(odd)
+				bg #c9c9c9
+	&__status
+		img
+			margin 0 3px
+	.input__checkbox--label
+		&:before
+			margin-right 0
+
 .titulo
 	&--principal
 		border-top 10px solid color__rojo
 		flex()
 		padding-top 1.5rem
 		span
-			font-size 1.25rem
 			background url(imgs/svg_dividers/dividerline.svg) repeat-x left bottom
 			background-size 1px auto
+			font-size 1.15rem
 			margin-left 10px
 			padding-bottom 8px
+			uppercase()
+		&--negro
+			border-top 10px solid #3a3c39
 
 .va-t
 	align-self(flex-start)
@@ -879,12 +964,6 @@ section.contenido
 	body
 	html
 		font-size f__uno * 0.75
-	// .bloques--reticula
-	// .bloques--reticula--centrado
-	// .bloques--reticula--around
-	// .bloques--reticula__renglon
-	// 	flex-direction(column)
-	// 	align-items(center);
 	section.contenido
 		padding 0 !important
 	.bloque--cuarto
@@ -904,6 +983,11 @@ section.contenido
 			img
 				height 30px
 				width 30px
+	.buscador
+		margin 0
+		padding 0 2vw
+		.input__field
+			max-width 5000px
 	.contenido
 		-webkit-flex-grow: 0
 		flex-grow: 0
@@ -919,6 +1003,15 @@ section.contenido
 		min-height 0
 		height auto
 		padding 10px 0
+		&__botones
+			justify-content(space-between)
+			padding 0 2vw
+			.franja--izq
+				&:before
+					hide() !important
+			.franja--der:last-child
+				&:after
+					hide() !important
 		&__persona
 			hide()
 		&__avatar
@@ -987,6 +1080,11 @@ section.contenido
 			width 70px
 			button
 				padding 0 15px
+	// .bloques--reticula
+	// .bloques--reticula--centrado
+	// .bloques--reticula--around
+	.movil_bloques--reticula__renglon
+		flex-direction(column)
 	.movil_bloque--mitad
 	.movil_bloque--50
 		width calc(50% - 0.5rem) !important
@@ -1008,7 +1106,6 @@ section.contenido
 	.movil_mr
 	.mr
 		margin-right 0.5rem !important
-
 	.no-desktop
 		flex()
 	.no-movil
@@ -1042,6 +1139,46 @@ section.contenido
 			padding 1.5rem
 			overflow auto
 			max-height calc( 100vh - 3em - 55px )
+	.tabla
+		td
+			padding 2px 0
+			text-align center
+			font-size 0.9rem
+			relative()
+			&:after
+				height 100%
+			&:before
+				bg #474747
+				block()
+				color blanco
+				content: attr(data-label);
+				height 25px
+				padding 4px
+				text-align center
+				uppercase()
+		&__encabezado
+			hide()
+		&__fila
+			&--verde
+				bg rgba(#22bf7c, 0.25) !important
+		&__filas
+			td
+				font-weight 600
+				&.movil_tabla__celda
+					width calc( (100% - 24px) / 3 )
+				&.movil_tabla__checkbox
+					width 24px
+				// &:after
+				&:after
+					bg negro
+			tr
+				flex()
+				flex-wrap(wrap)
+				justify-content(flex-end)
+				border-top 1px solid blanco
+				border-bottoma 1px solid #c1c1c1
+				&:nth-child(odd)
+					bg #c9c9c9
 	.tablero
 		flex-direction(column)
 		padding 0 2vw
@@ -1089,6 +1226,9 @@ section.contenido
 			img
 				height 28px
 				margin-right 10px
+	.titulos
+		&__contendor
+			flex-direction(column)
 
 @media print
 	@page

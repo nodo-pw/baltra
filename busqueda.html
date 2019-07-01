@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Baltra - Búsqueda</title>
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="theme-color" content="#C22026">
+</head>
+
+<body>
+	<header role="banner" class="encabezado bloques--reticula">
+		<div class="menu__hamb">
+			<button class="js--menu__hamb">
+				<img src="imgs/svg_othericons/hamburguericon.svg" alt="">
+			</button>
+		</div>
+		<div class="bloque--sidebar sidebar__logo franja--der">
+			<a href="#">
+				<img src="imgs/svg_interfaceelements/logobaltra--gris.svg" alt="Baltra">
+			</a>
+		</div>
+		<div class="encabezado__usuario contenido">
+			<figure class="encabezado__avatar franja--der">
+				<img src="imgs/svg_othericons/profileicon01.svg" alt="Usuario">
+			</figure>
+			<div class="encabezado__persona">
+				<span class="encabezado__nombre">Francisco Sevilla</span>
+				<span class="encabezado__rol">Administrador</span>
+			</div>
+			<div class="encabezado__menu">
+				<button class="encabezado__icono js--encabezado__icono">
+					<img src="/imgs/svg_interfaceelements/profilemenu.svg" alt="Menu">
+				</button>
+				<div class="encabezado__perfil js--encabezado__perfil">
+					<ul>
+						<li>
+							<button class="js--lightwindow_btn--perfil">Editar Mi Perfil</button>
+						</li>
+						<li>
+							<a href="">Logout</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main role='main' class="main bloques--flex">
+		<section class="contenido">
+
+			<header class="bloques--reticula mb titulos__contendor">
+				<h1 class="bloque--grow titulo--principal movil_mb">
+					<figure>
+						<img src="/imgs/svg_iconswhite/searchreports_iconwhitebg.svg" alt="Búsqueda de reportes" class="no-movil">
+						<img src="/imgs/svg_iconsdark/searchreports_icondarkbg.svg" alt="Búsqueda de reportes" class="no-desktop">
+					</figure>
+					<span class="">
+						Búsqueda de reportes
+					</span>
+				</h1>
+				
+				
+				<div class="bloque--grow align--center bloques--reticula--derecha movil_bloque--full">
+					<hr class="franja--vert mr bloque-h--40 no-movil">
+					<form action="" class="movil_mb movil_bloque--full">
+						<div class="bloques--reticula--centrado buscador mr">
+							<input type="text" name="" class="input__field bloque--grow mr" id="" placeholder="Buscar">
+							<input type="submit" value="Buscar" class="btn btn--chico btn--rojo mr">
+							<select name="" id="" class="input__field bloque--grow">
+								<option value="Nombre del vendedor">Nombre del vendedor</option>
+							</select>
+						</div>
+					</form>
+				</div>
+
+			</header>
+
+			<hr class="franja mb">
+			
+			<div class="bloque--grow align--center bloques--reticula--derecha bloques--reticula movil_bloque--full encabezado__botones mb">
+				<span class="mr franja--der franja--izq"><button class="btn btn--chico desktop_ml mr">Editar</button></span>
+				<span class="mr franja--der"><button class="btn btn--chico mr">Archivar</button></span>
+				<span class="mr franja--der"><button class="btn btn--chico mr">Enviar</button></span>
+				<span class="mr franja--der"><button class="btn btn--chico desktop_mr">Imprimir</button></span>
+			</div>
+
+			<div class="bloques--reticula tablero">
+				<div class="bloque--full mr tablero__principal">
+					<div class="no-desktop mb bloques--reticula">
+						<button class="btn btn--chico btn--rojo">Cliente <img src="/imgs/svg_interfaceelements/collapsearrow--blanco.svg" alt=""></button>
+						<button class="btn btn--chico btn--rojo">Tipo <img src="/imgs/svg_interfaceelements/collapsearrow--blanco.svg" alt=""></button>
+						<button class="btn btn--chico btn--rojo">Valor Total <img src="/imgs/svg_interfaceelements/collapsearrow--blanco.svg" alt=""></button>
+						<button class="btn btn--chico btn--rojo">Status <img src="/imgs/svg_interfaceelements/collapsearrow--blanco.svg" alt=""></button>
+					</div>
+					<hr class="franja no-desktop">
+					<div class="tabla__contenedor">
+						<table class="tabla bloque--full" cellpadding="0" cellspacing="0">
+							<thead class="tabla__encabezado tabla__encabezado--rojo">
+								<tr>
+									<td width="24"></td>
+									<td>Reporte</td>
+									<td><button>Cliente <img src="/imgs/svg_interfaceelements/collapsearrow--blanco.svg" alt=""></button></td>
+									<td><button>Fecha<img src="/imgs/svg_interfaceelements/collapsearrow--blanco.svg" alt=""></button></td>
+									<td><button>Tipo<img src="/imgs/svg_interfaceelements/collapsearrow--blanco.svg" alt=""></button></td>
+									<td><button>Valor Total<img src="/imgs/svg_interfaceelements/collapsearrow--blanco.svg" alt=""></button></td>
+									<td><button>Seguimiento<img src="/imgs/svg_interfaceelements/collapsearrow--blanco.svg" alt=""></button></td>
+								</tr>
+							</thead>
+							<tbody class="tabla__filas">
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_green.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray02.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_yellow.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray02.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_red.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_green.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray02.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_yellow.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray02.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_red.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_green.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray02.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_yellow.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray02.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_red.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_green.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray02.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_yellow.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray02.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_red.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_green.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray02.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_yellow.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray02.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_red.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_green.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray02.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_yellow.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray02.svg" alt="">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="movil_tabla__checkbox">
+										<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+										<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+									</td>
+									<td class="movil_tabla__celda" data-label="Reporte">
+										FS1.RB0007.1852
+									</td>
+									<td class="movil_tabla__celda" data-label="Cliente">
+										Alejandra Reyes
+									</td>
+									<td class="movil_tabla__celda" data-label="Fecha">
+										29 / 04 / 19
+									</td>
+									<td class="movil_tabla__celda" data-label="Tipo">
+										Coche
+									</td>
+									<td class="movil_tabla__celda" data-label="Valor Total">
+										230,000.00 MXN
+									</td>
+									<td class="movil_tabla__celda" data-label="Seguimiento">
+										<div class="bloques__renglon--centrado tabla__status">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_gray01.svg" alt="">
+											<img src="/imgs/svg_othericons/statusicon_red.svg" alt="">
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<hr class="franja">
+				</div>
+			</div>
+
+		</section>
+		<aside class="bloque--sidebar sidebar js--sidebar">
+			<div class="sidebar__hamb">
+				<button class="js--menu__hamb">
+					<img src="imgs/svg_othericons/hamburguericon--blanco.svg" alt="">
+				</button>
+			</div>
+			<nav class="sidebar__nav">
+				<ul>
+					<li>
+						<div class="bloques--reticula--centrado menu__btn">
+							<button class="js--menu__btn bloque--grow" data-menu="reportes"><div class="menu__link">Reportes</div></button>
+						</div>
+						<div class="menu__submenu js--submenu bloque--full" data-menu="reportes">
+							<ul>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/basicrespor_icondarkbg.svg" alt="basicrespor"></div>Reporte Básico
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/advancedreport_icondarkbg.svg" alt="advancedreport"></div>Reporte Avanzado
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="bloques--reticula--centrado menu__btn">
+							<button class="js--menu__btn bloque--grow" data-menu="archivo"><div class="menu__link">Archivo</div></button>
+							<div class="bloque--fijo">
+								<img src="/imgs/svg_othericons/statusicon_red.svg" alt="Status Red">
+							</div>
+						</div>
+						<div class="menu__submenu js--submenu bloque--full" data-menu="archivo">
+							<ul>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/myreports_icondarkbg.svg" alt="myreports"></div>Mis Reportes
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/completedreports_icondarkbg.svg" alt="completedreports"></div>Completados
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/searchreports_icondarkbg.svg" alt="searchreports"></div>Búsqueda
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="bloques--reticula--centrado menu__btn">
+							<button class="js--menu__btn bloque--grow" data-menu="ajustes"><div class="menu__link">Ajustes</div></button>
+						</div>
+						<div class="menu__submenu js--submenu bloque--full" data-menu="ajustes">
+							<ul>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/users_icondarkbg.svg" alt="users"></div>Usuarios
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/configuration_icondarkbg.svg" alt="configuration"></div>Configuración
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</aside>	
+	</main>
+
+	<footer id="" class="footer bloques--reticula">
+		<div class="bloque--sidebar sidebar__logo franja--der">
+			<a href="#">
+				<img src="imgs/svg_interfaceelements/logobaltra--blanco.svg" alt="Baltra">
+			</a>
+		</div>
+		<div class="bloques--reticula bloque--grow footer__contenido">
+			<div class="franja--der footer__link">
+				<a href="#">Términos & condiciones</a>
+			</div>
+			<div class="franja--der footer__link">
+				<a href="#">Políticas de privacidad</a>
+			</div>
+			<div class="franja--der footer__derechos">
+				<p>
+					GRUPO BALTRA TODOS LOS DERECHOS RESERVADOS
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<div class="lightwindow js--lightwindow--perfil bloques--renglones--centrado">
+		<div class="lightwindow__caja">
+			<header class="lightwindow__encabezado">
+				<h2 class="lightwindow__titulo">
+					Mi perfil
+				</h2>
+			</header>
+			<div class="lightwindow__contenido">
+				<div class="bloques--reticula mb">
+					<div class="bloque--fijo mr">
+						<img src="/imgs/svg_othericons/changeprofileicon.svg" alt="">
+					</div>
+					<div class="bloque--grow">
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Nombre
+							</label>
+							<input type="text" name="" class="input__field bloque--grow" value="Luis Díaz" id="form_name" placeholder="Nombre">
+						</div>
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Tipo de acceso
+							</label>
+							<input type="text" name="" class="input__field bloque--grow" value="Vendedor" id="form_name" placeholder="Tipo de acceso">
+						</div>
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Correo
+							</label>
+							<input type="email" name="" class="input__field bloque--grow" value="mail@baltra.mx" id="form_name" placeholder="Correo">
+						</div>
+					</div>
+				</div>
+				<hr class="franja">
+				<div class="input__contenedor bloque--full">
+					<div class="bloque--grow mr franjas_verticales"></div>
+					<label for="password" class="input__label input__label--chico input__label--left mr bloque--41">
+						Nueva Contraseña
+					</label>
+					<input type="password" name="" class="input__field bloque--30" id="password" placeholder="Nueva Contraseña">
+				</div>
+				<div class="input__contenedor bloque--full">
+					<div class="bloque--grow mr franjas_verticales"></div>
+					<label for="confirm_password" class="input__label input__label--chico input__label--left mr bloque--41">
+						Confirmar Contraseña
+					</label>
+					<input type="password" name="" class="input__field bloque--30" id="confirm_password" placeholder="Confirmar Contraseña">
+				</div>
+
+				<hr class="franja">
+				<div class="bloques--reticula--derecha">
+					<button class="btn js--lightwindow_btn--cerrar mr">Cancelar</button>
+					<input type="submit" value="Aceptar" class="btn">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lightwindow__bg js--lightwindow__bg"></div>
+
+</body>
+<script src="js/funciones-min.js"></script> 
+</html>
