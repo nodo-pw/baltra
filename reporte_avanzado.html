@@ -53,8 +53,8 @@
 			<header class="bloques--reticula mb">
 				<h1 class="bloque--fijo titulo--principal">
 					<figure>
-						<img src="/imgs/svg_iconswhite/advancedreport_iconwhitebg.svg" alt="Reporte Avanzado" class="no-desktop">
-						<img src="/imgs/svg_iconsdark/advancedreport_icondarkbg.svg" alt="Reporte Avanzado" class="no-movil">
+						<img src="/imgs/svg_iconswhite/advancedreport_iconwhitebg.svg" alt="Reporte Avanzado" class="no-movil">
+						<img src="/imgs/svg_iconsdark/advancedreport_icondarkbg.svg" alt="Reporte Avanzado" class="no-desktop">
 					</figure>
 					<span class="">
 						Reporte Avanzado
@@ -70,30 +70,46 @@
 			
 			<hr class="franja">
 
-			<div class="bloques--reticula">
-				<div class="bloque--grow mr">
-					<div class="bloques--reticula mb">
-						<div class="bloque--tercio">
+			<div class="bloques--reticula tablero">
+				<div class="bloque--grow mr tablero__principal">
+					<div class="bloques--reticula__renglon desktop_mb">
+						<div class="bloque--tercio movil_bloque--mitad">
 							<strong>Reporte</strong> | FSRA0001.1852
 						</div>
-						<div class="bloque--tercio">
+						<div class="bloque--tercio movil_bloque--mitad">
 							<strong>Fecha</strong> | 29 / Abril / 2019
 						</div>
-						<div class="bloque--tercio">
+						
+						<hr class="franja bloque--full no-desktop mt">
+
+						<div class="bloque--tercio movil_bloque--full bloques--reticula">
 							<div class="input__contenedor bloque--grow mr">
 								<input type="checkbox" name="" class="input__checkbox" id="login_remember" value="">
-								<label for="login_remember" class="input__checkbox--label">
+								<label for="login_remember" class="input__checkbox--label no-movil">
 									Friend & Family
 								</label>
+								<label for="login_remember" class="input__checkbox--label no-desktop">
+									F & F
+								</label>
 							</div>
+
+							<div class="bloque--grow align--center bloques--reticula--derecha no-desktop">
+								<span class="mr franja--der franja--izq"><button class="btn ml mr">Enviar</button></span>
+								<span class="mr franja--der"><button class="btn mr">Imprimir</button></span>
+								<span class="mr franja--der"><button class="btn mr">Guardar</button></span>
+								<button class="btn--img"><img src="/imgs/svg_btns/nuevo/nuevo_btn01.svg" alt="Nuevo"></button>
+							</div>
+
 						</div>
+
+						<hr class="franja bloque--full no-desktop mt">
 					</div>
 
 					<div class="input__contenedor">
-						<label for="input_2" class="input__label input__label--der bloque--30 mr">
+						<label for="input_2" class="input__label input__label--der movil_input__label--izq bloque--30 mr">
 							Nombre del cliente
 						</label>
-						<select name="" id="" class="input__field bloque--13 mr">
+						<select name="" id="" class="input__field bloque--13 movil_bloque--22 mr">
 							<option value="Srita.">Srita.</option>
 						</select>
 						<input type="text" name="" class="input__field bloque--grow" value="Selen Sedano" id="input_2" placeholder="Nombre del cliente">
@@ -102,30 +118,30 @@
 					<hr class="franja">
 
 					<div class="input__contenedor">
-						<label for="input_3" class="input__label input__label--der bloque--30 mr">
+						<label for="input_3" class="input__label input__label--der movil_input__label--izq bloque--30 mr">
 							Tipo de arrendamiento
 						</label>
-						<select name="" id="" class="input__field bloque--13 mr">
+						<select name="" id="" class="input__field bloque--13 movil_bloque--22 mr">
 							<option value="Coche">Coche</option>
 						</select>
 						<input type="text" name="" class="input__field bloque--grow" value="Vento Confortline Manual" id="input_3" placeholder="Tipo de arrendamiento">
 					</div>
 
 					<div class="bloques--flex">
-						<label for="input_4" class="input__label input__label--der bloque--30 mr">
+						<label for="input_4" class="input__label input__label--der bloque--30 mr movil_input__label--izq">
 							Valor total
 						</label>
-						<div class="input__contenedor bloque--37 mr">
+						<div class="input__contenedor bloque--37 desktop_mr movil_bloque--full">
 							<input type="text" name="" class="input__field bloque--grow mr" value="230,000.00" id="input_4" placeholder="Valor total">
 							<select name="" id="" class="input__field bloque--30">
 								<option value="MXN">MXN</option>
 							</select>
 						</div>
 
-						<hr class="franja--vert mr bloque-h--40">
+						<hr class="franja--vert mr bloque-h--40 no-movil">
 
-						<div class="input__contenedor bloque--grow">
-							<label for="input_5" class="input__label input__label--centrado bloque--fijo mr">
+						<div class="input__contenedor bloque--grow movil_bloque--full">
+							<label for="input_5" class="input__label input__label--centrado bloque--fijo mr movil_input__label--izq">
 								Plazo
 							</label>
 							<select name="" id="input_5" class="input__field bloque--grow">
@@ -135,153 +151,152 @@
 					</div>
 
 					<div class="bloques--flex">
-						<label for="input_6" class="input__label input__label--der bloque--30 mr">
+						<label for="input_6" class="input__label input__label--der bloque--30 mr movil_bloque--50">
 							Comisión por apertura
 						</label>
-						<div class="input__contenedor bloque--37 mr">
+						<div class="input__contenedor bloque--37 movil_bloque--50 desktop_mr">
 							<input type="text" name="" class="input__field bloque--22 mr" value="3.00" id="input_6" placeholder="Comisión por apertura">
 							<span class="input__etiqueta mr">%</span>
-							<hr class="franja--vert mr bloque-h--40 va-t">
-							<input type="text" name="" class="input__field input__field--disabled mr" disabled value="$ 2,000.00 MXN" id="" placeholder="">
+							<hr class="franja--vert mr bloque-h--40 va-t no-movil">
+							<input type="text" name="" class="input__field input__field--disabled  desktop_mr movil_bloque--58" disabled value="$ 2,000.00 MXN" id="" placeholder="">
 						</div>
-						<hr class="franja--vert mr bloque-h--40">
+						<hr class="franja--vert mr bloque-h--40 no-movil">
 					</div>
 
 					<div class="bloques--flex">
-						<label for="input_7" class="input__label input__label--der bloque--30 mr">
+						<label for="input_7" class="input__label input__label--der bloque--30 mr movil_bloque--50">
 							Valor residual
 						</label>
-						<div class="input__contenedor bloque--37 mr">
+						<div class="input__contenedor bloque--37 movil_bloque--50 desktop_mr">
 							<input type="text" name="" class="input__field input__field--correct bloque--22 mr" value="35.00" id="input_7" placeholder="Valor residual">
 							<span class="input__etiqueta mr">%</span>
-							<hr class="franja--vert mr bloque-h--40 va-t">
-							<input type="text" name="" class="input__field input__field--correct mr" disabled value="$ 70,000.00 MXN" id="" placeholder="">
+							<hr class="franja--vert mr bloque-h--40 va-t no-movil">
+							<input type="text" name="" class="input__field input__field--correct  desktop_mr movil_bloque--58" disabled value="$ 70,000.00 MXN" id="" placeholder="">
 						</div>
-						<hr class="franja--vert mr bloque-h--40">
+						<hr class="franja--vert mr bloque-h--40 no-movil">
 					</div>
 
 					<div class="bloques--flex">
-						<label for="input_8" class="input__label input__label--der bloque--30 mr">
+						<label for="input_8" class="input__label input__label--der bloque--30 mr movil_bloque--50">
 							Pago inicial
 						</label>
-						<div class="input__contenedor bloque--37 mr">
+						<div class="input__contenedor bloque--37 movil_bloque--50 desktop_mr">
 							<input type="text" name="" class="input__field input__field--correct bloque--22 mr" value="10.00" id="input_8" placeholder="Pago inicial">
 							<span class="input__etiqueta mr">%</span>
-							<hr class="franja--vert mr bloque-h--40 va-t">
-							<input type="text" name="" class="input__field input__field--correct mr" disabled value="$ 28,000.00 MXN" id="" placeholder="">
+							<hr class="franja--vert mr bloque-h--40 va-t no-movil">
+							<input type="text" name="" class="input__field input__field--correct  desktop_mr movil_bloque--58" disabled value="$ 28,000.00 MXN" id="" placeholder="">
 						</div>
-						<hr class="franja--vert mr bloque-h--40">
+						<hr class="franja--vert mr bloque-h--40 no-movil">
 					</div>
 
 					<div class="bloques--flex">
-						<label for="input_9" class="input__label input__label--der bloque--30 mr">
+						<label for="input_9" class="input__label input__label--der bloque--30 mr movil_bloque--50">
 							Depóito en garantía
 						</label>
-						<input type="text" name="" class="input__field bloque--37 mr" value="$ 28,000.00" id="input_9" placeholder="Depóito en garantía">
-						<hr class="franja--vert mr bloque-h--40">
+						<input type="text" name="" class="input__field movil_bloque--50 mr" value="$ 28,000.00" id="input_9" placeholder="Depóito en garantía">
+						<hr class="franja--vert mr bloque-h--40 no-movil">
 					</div>
 
 					<hr class="franja">
 
 					<div class="bloques--flex">
-						<label for="input_10" class="input__label input__label--der bloque--30 mr">
+						<label for="input_10" class="input__label input__label--der bloque--30 desktop_mr movil_input__label--izq">
 							Descuento Proveedor
 						</label>
-						<div class="input__contenedor bloque--37 mr">
-							<input type="text" name="" class="input__field bloque--41 mr" value="10,000.00" id="input_10" placeholder="Descuento Proveedor">
-							<input type="text" name="" class="input__field input__field--disabled bloque--grow mr" disabled value="8.20 %" id="input_10" placeholder="Descuento Proveedor">
+						<div class="input__contenedor bloque--37 mr movil_bloque--full">
+							<input type="text" name="" class="input__field bloque--41 mr movil_bloque--50" value="10,000.00" id="input_10" placeholder="Descuento Proveedor">
+							<input type="text" name="" class="input__field input__field--disabled bloque--grow desktop_mr movil_bloque--50" disabled value="8.20 %" id="input_10" placeholder="Descuento Proveedor">
 						</div>
 
-						<hr class="franja--vert mr bloque-h--40">
+						<hr class="franja--vert mr bloque-h--40 no-movil">
 
-						<div class="input__contenedor bloque--grow">
-							<label for="input_11" class="input__label bloque--grow input__label--disabled input__label--izq mr">
+						<div class="input__contenedor movil_bloque--full">
+							<label for="input_11" class="input__label input__label--disabled input__label--izq mr">
 								Taza
 							</label>
-							<input type="text" name="" class="input__field bloque--fijo" disabled value="15" id="input_10" placeholder="Descuento Proveedor">
+							<input type="text" name="" class="input__field bloque--30 movil_bloque--full" disabled value="15" id="input_10" placeholder="Descuento Proveedor">
 						</div>
 					</div>
 
 					<div class="bloques--flex">
-						<label for="input_11" class="input__label input__label--der bloque--30 mr">
+						<label for="input_11" class="input__label input__label--der bloque--30 desktop_mr movil_input__label--izq">
 							Equipo GPS Cotizado
 						</label>
-						<div class="input__contenedor bloque--37 mr">
-							<select name="" id="" class="input__field bloque--34 mr">
+						<div class="input__contenedor bloque--37 desktop_mr movil_bloque--full">
+							<select name="" id="" class="input__field bloque--34 mr movil_bloque--50">
 								<option value="Sí">Sí</option>
 							</select>
 							<hr class="franja--vert mr bloque-h--40 va-t">
-							<input type="text" name="" class="input__field input__field--disabled mr" disabled value="$ 2,000.00 MXN" id="input_11" placeholder="Equipo GPS Cotizado">
+							<input type="text" name="" class="input__field input__field--disabled desktop-mr movil_bloque--50" disabled value="$ 2,000.00 MXN" id="input_11" placeholder="Equipo GPS Cotizado">
 						</div>
-						<hr class="franja--vert mr bloque-h--40">
+						<hr class="franja--vert mr bloque-h--40 no-movil">
 						<p class="input__leyenda">
 							* Precio con IVA mensual
 						</p>
 					</div>
 					<div class="bloques--flex">
-						<label for="input_12" class="input__label input__label--der bloque--30 mr">
+						<label for="input_12" class="input__label input__label--der bloque--30 desktop_mr movil_input__label--izq movil_mb">
 							Equipo GPS por fuera
 						</label>
-						<div class="input__contenedor bloque--37 mr">
-							<select name="" id="" class="input__field bloque--34 mr">
+						<div class="input__contenedor bloque--37 desktop_mr movil_bloque--full">
+							<select name="" id="" class="input__field bloque--34 mr movil_bloque--50">
 								<option value="Sí">Sí</option>
 							</select>
 							<hr class="franja--vert mr bloque-h--40 va-t">
-							<input type="text" name="" class="input__field input__field--disabled mr" disabled value="$ 2,000.00 MXN" id="input_12" placeholder="Equipo GPS por fuera">
+							<input type="text" name="" class="input__field input__field--disabled desktop-mr movil_bloque--50" disabled value="$ 2,000.00 MXN" id="input_12" placeholder="Equipo GPS por fuera">
 						</div>
-						<hr class="franja--vert mr bloque-h--40">
+						<hr class="franja--vert mr bloque-h--40 no-movil">
 					</div>
 					<div class="bloques--flex">
-						<label for="input_13" class="input__label input__label--der bloque--30 mr">
+						<label for="input_13" class="input__label input__label--der bloque--30 desktop_mr movil_input__label--izq">
 							Llave adicional
 						</label>
-						<div class="input__contenedor bloque--37 mr">
-							<select name="" id="" class="input__field bloque--34 mr">
+						<div class="input__contenedor bloque--37 desktop_mr movil_bloque--full">
+							<select name="" id="" class="input__field bloque--34 mr movil_bloque--50">
 								<option value="Sí">Sí</option>
 							</select>
 							<hr class="franja--vert mr bloque-h--40 va-t">
-							<input type="text" name="" class="input__field input__field--disabled mr" disabled value="$ 2,000.00 MXN" id="input_13" placeholder="Llave adicional">
+							<input type="text" name="" class="input__field input__field--disabled desktop-mr movil_bloque--50" disabled value="$ 2,000.00 MXN" id="input_13" placeholder="Llave adicional">
 						</div>
-						<hr class="franja--vert mr bloque-h--40">
-						<p class="input__leyenda">
+						<hr class="franja--vert mr bloque-h--40 no-movil">
+						<p class="input__leyenda movil_mb">
 							*Este importe es con IVA inluido
 						</p>
 					</div>
 					<div class="bloques--flex">
-						<label for="input_14" class="input__label input__label--der bloque--30 mr">
+						<label for="input_14" class="input__label input__label--der bloque--30 desktop_mr movil_input__label--izq">
 							Seguro anual 
 						</label>
-						<div class="input__contenedor bloque--37 mr">
-							<select name="" id="" class="input__field bloque--34 mr">
+						<div class="input__contenedor bloque--37 desktop_mr movil_bloque--full">
+							<select name="" id="" class="input__field bloque--34 mr movil_bloque--50">
 								<option value="Sí">Sí</option>
 							</select>
 							<hr class="franja--vert mr bloque-h--40 va-t">
-							<input type="text" name="" class="input__field input__field--disabled mr" disabled value="$ 2,000.00 MXN" id="input_14" placeholder="Seguro anual">
+							<input type="text" name="" class="input__field input__field--disabled desktop-mr movil_bloque--50" disabled value="$ 2,000.00 MXN" id="input_14" placeholder="Seguro anual">
 						</div>
-						<hr class="franja--vert mr bloque-h--40">
-						<p class="input__leyenda">
+						<hr class="franja--vert mr bloque-h--40 no-movil">
+						<p class="input__leyenda movil_mb">
 							*Este importe es con IVA inluido
 						</p>
 					</div>
-
 				</div>
 				<hr class="franja--vert mr">
 
-				<div class="bloque--fijo">
-					<div class="input__contenedor input__contenedor--vertical mb">
+				<div class="bloque--fijo tablero__sidebar">
+					<div class="input__contenedor input__contenedor--vertical mb no-movil">
 						<label for="input_1" class="input__label bloque--full">
 							Nombre del vendedor
 						</label>
 						<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="Francisco Sevilla" id="input_1" placeholder="Nombre del vendedor">
 					</div>
-					<hr class="franja">
+					<hr class="franja no-movil">
 					<div class="input__contenedor input__contenedor--vertical mb">
 						<label for="input_1" class="input__label input__label--roja bloque--full">
 							Mensualidad
 						</label>
 						<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="$ 0,000.00 MXN" id="input_1" placeholder="Mensualidad">
 					</div>
-					<hr class="franja">
+					<hr class="franja no-movil">
 					<div class="input__contenedor input__contenedor--vertical mb">
 						<label for="input_1" class="input__label input__label--roja bloque--full">
 							Comisión por apertura

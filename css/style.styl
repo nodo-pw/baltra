@@ -143,23 +143,23 @@ table
 	color #757575
 	font-weight: 600
 	opacity 1
-	font-size 20px
+	font-size f__uno * 0.85
 :-moz-placeholder
 	color 757575
 	font-weight: 600
 	opacity 1
-	font-size 20px
+	font-size f__uno * 0.85
 ::-moz-placeholder
 	color 757575
 	font-weight: 600
 	opacity 1
-	font-size 20px
+	font-size f__uno * 0.85
 :-ms-input-placeholder
 :-ms-textarea-placeholder
 	color 757575
 	font-weight: 600
 	opacity 1
-	font-size 20px
+	font-size f__uno * 0.85
 
 /* <---------- ID's ----------> */
 
@@ -567,7 +567,7 @@ section.contenido
 		// justify-content(space-between)
 		// width auto
 		overflow hidden
-		min-width 0
+		min-width 0 !important
 		&--vertical
 			flex-direction(column)
 	&__etiqueta
@@ -641,14 +641,21 @@ section.contenido
 .no-desktop
 	hide()
 
+.desktop_mb
 .mb
 	margin-bottom 18px !important
 
+.desktop_ml
 .ml
 	margin-left 13px !important
 
+.desktop_mr
 .mr
 	margin-right 13px !important
+
+.desktop_mt
+.mt
+	margin-top 18px !important
 
 .login
 	align-items(center)
@@ -804,6 +811,10 @@ section.contenido
 	&__nav
 		padding 1.5rem
 
+// .tablero
+// 	&__principal
+// 	&__sidebar
+
 .titulo
 	&--principal
 		border-top 10px solid color__rojo
@@ -879,9 +890,24 @@ section.contenido
 		column-count: 1
 	.bloque--sidebar
 		width auto
+	.btn
+		font-size 0.8rem
+		padding 5px 8px
+		&--img
+			img
+				height 30px
+				width 30px
 	.contenido
 		-webkit-flex-grow: 0
 		flex-grow: 0
+	.desktop_mb
+		margin-bottom 0 !important
+	.desktop_ml
+		margin-left 0 !important
+	.desktop_mr
+		margin-right 0 !important
+	.desktop_mt
+		margin-top 0 !important
 	.encabezado
 		min-height 0
 		height auto
@@ -933,6 +959,16 @@ section.contenido
 		.franja--der
 			&:after
 				hide()
+	.franja
+		margin 0 auto 0.5rem
+	.input
+		&__checkbox
+			&--label
+				&:before
+					margin-right 0.5rem
+		&__label
+		&__field
+			margin-bottom 0.5rem
 	.menu
 	.sidebar
 		&__hamb
@@ -944,8 +980,30 @@ section.contenido
 			width 70px
 			button
 				padding 0 15px
+	.movil_bloque--mitad
+	.movil_bloque--50
+		width calc(50% - 0.5rem) !important
+	.movil_bloque--full
+		width 100% !important
+	.movil_bloque--22
+		width 22% !important
+	.movil_bloque--30
+		width 30% !important
+	.movil_bloque--58
+		width 58% !important
+	.movil_input__label--izq
+		text-align left
+	.movil_mb
+		margin-bottom 0.5rem !important
+	.movil_ml
+	.ml
+		margin-left 0.5rem !important
+	.movil_mr
+	.mr
+		margin-right 0.5rem !important
+
 	.no-desktop
-		block()
+		flex()
 	.no-movil
 		hide()
 	.sidebar
@@ -977,17 +1035,53 @@ section.contenido
 			padding 1.5rem
 			overflow auto
 			max-height calc( 100vh - 3em - 55px )
+	.tablero
+		flex-direction(column)
+		padding 0 2vw
+		width 100vw
+		&__principal
+			-webkit-order 2
+			order 2
+			.bloques--flex
+				flex-wrap(wrap)
+			.input
+				&__contenedor
+					flex-wrap(wrap)
+				&__label
+					width 100%
+		&__sidebar
+			-webkit-order 1
+			order 1
+			.input__contenedor--vertical
+				flex-direction(row)
+				margin-bottom 0 !important
+			.input
+				&__field
+				&__label
+					-webkit-flex-grow 1
+					flex-grow 1
+				&__field
+					width 50%
+				&__label
+					margin-right 13px
+					width calc( 50% - 13px )
 	.titulo
 		&--principal
-			border-top 10px solid color__rojo
-			width 100%
+			align-items(center)
 			bg #3a3c39
+			border-top 10px solid color__rojo
+			justify-content(center)
+			padding 1em 0
 			text-align center
+			width 100%
 			span
 				background none
 				margin 0
 				padding-bottom 0
 				color #efefef
+			img
+				height 28px
+				margin-right 10px
 
 @media print
 	@page
