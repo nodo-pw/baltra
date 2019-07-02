@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Baltra - Usuarios</title>
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="theme-color" content="#C22026">
+</head>
+
+<body>
+	<header role="banner" class="encabezado bloques--reticula">
+		<div class="menu__hamb">
+			<button class="js--menu__hamb">
+				<img src="imgs/svg_othericons/hamburguericon.svg" alt="">
+			</button>
+		</div>
+		<div class="bloque--sidebar sidebar__logo franja--der">
+			<a href="#">
+				<img src="imgs/svg_interfaceelements/logobaltra--gris.svg" alt="Baltra">
+			</a>
+		</div>
+		<div class="encabezado__usuario contenido">
+			<figure class="encabezado__avatar franja--der">
+				<img src="imgs/svg_othericons/profileicon01.svg" alt="Usuario">
+			</figure>
+			<div class="encabezado__persona">
+				<span class="encabezado__nombre">Francisco Sevilla</span>
+				<span class="encabezado__rol">Administrador</span>
+			</div>
+			<div class="encabezado__menu">
+				<button class="encabezado__icono js--encabezado__icono">
+					<img src="/imgs/svg_interfaceelements/profilemenu.svg" alt="Menu">
+				</button>
+				<div class="encabezado__perfil js--encabezado__perfil">
+					<ul>
+						<li>
+							<button class="js--lightwindow_btn--perfil">Editar Mi Perfil</button>
+						</li>
+						<li>
+							<a href="">Logout</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main role='main' class="main bloques--flex">
+		<section class="contenido">
+
+			<header class="bloques--reticula mb titulos__contendor">
+				<h1 class="bloque--fijo titulo--principal movil_mb">
+					<figure>
+						<img src="/imgs/svg_iconswhite/users_iconwhitebg.svg" alt="Usuarios" class="no-movil">
+						<img src="/imgs/svg_iconsdark/users_icondarkbg.svg" alt="Usuarios" class="no-desktop">
+					</figure>
+					<span class="">
+						Usuarios
+					</span>
+				</h1>
+				
+				<div class="bloque--full align--center bloques--reticula--derecha no-desktop">
+					<span class="mr franja--der"><button class="btn ml mr js--usuario_btn--editar">Editar</button></span>
+					<span class="mr franja--der"><button class="btn mr js--usuario_btn--eliminar">Eliminar</button></span>
+				</div>
+
+				<div class="bloque--grow align--center bloques--reticula--derecha no-movil">
+					<span class="mr franja--izq"><button class="btn--img ml js--usuario_btn--agregar"><img src="/imgs/svg_btns/nuevo/nuevo_btn01.svg" alt="Nuevo"></button></span>
+					
+				</div>
+
+			</header>
+
+			<hr class="franja mb">
+
+			<div class="bloques--reticula tablero">
+				<div class="bloque--full tablero__principal bloques--reticula__renglon usuarios">
+					<div class="bloque--tercio movil_bloque--full usuario bloques--flex">
+						<div class="usuario__check bloque--fijo">
+							<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+							<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+						</div>
+						<div class="bloque-fijo usuario__izq">
+							<img src="imgs/svg_othericons/profileicon01.svg" alt="Usuario" class="desktop_mb">
+							<hr class="franja mb no-movil bloque--full">
+							<button class="btn btn--mini no-movil mb js--usuario_btn--editar">Editar</button>
+							<button class="btn btn--mini no-movil js--usuario_btn--eliminar">Eliminar</button>
+						</div>
+						<hr class="franja--vert mr bloque-h--40 no-desktop">
+						<div class="bloque--grow usuario__der">
+							<div class="movil_bloque--mitad">
+								<h3 class="usuario__titulo">José Perez</h3>
+								<p class="usuario__rol desktop_mb">Vendedor</p>
+							</div>
+							<hr class="franja--vert mr bloque-h--40 no-desktop">
+							<hr class="franja mb no-movil bloque--full">
+							<p class="desktop_mb movil_bloque--mitad">
+								<span class="usuario__etiqueta">E-mail</span>
+								<span class="usuario__info">josep.965@gmail.com</span>
+							</p>
+							<hr class="franja mb no-movil bloque--full">
+							<p class="no-movil">
+								<span class="usuario__etiqueta">Usuario desde:</span>
+								<span class="usuario__info">03 / 04 /19</span>
+							</p>
+						</div>
+					</div>
+					<div class="bloque--tercio movil_bloque--full usuario bloques--flex">
+						<div class="usuario__check bloque--fijo">
+							<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+							<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+						</div>
+						<div class="bloque-fijo usuario__izq">
+							<img src="imgs/svg_othericons/profileicon01.svg" alt="Usuario" class="desktop_mb">
+							<hr class="franja mb no-movil bloque--full">
+							<button class="btn btn--mini no-movil mb js--usuario_btn--editar">Editar</button>
+							<button class="btn btn--mini no-movil js--usuario_btn--eliminar">Eliminar</button>
+						</div>
+						<hr class="franja--vert mr bloque-h--40 no-desktop">
+						<div class="bloque--grow usuario__der">
+							<div class="movil_bloque--mitad">
+								<h3 class="usuario__titulo">José Perez</h3>
+								<p class="usuario__rol desktop_mb">Vendedor</p>
+							</div>
+							<hr class="franja--vert mr bloque-h--40 no-desktop">
+							<hr class="franja mb no-movil bloque--full">
+							<p class="desktop_mb movil_bloque--mitad">
+								<span class="usuario__etiqueta">E-mail</span>
+								<span class="usuario__info">josep.965@gmail.com</span>
+							</p>
+							<hr class="franja mb no-movil bloque--full">
+							<p class="no-movil">
+								<span class="usuario__etiqueta">Usuario desde:</span>
+								<span class="usuario__info">03 / 04 /19</span>
+							</p>
+						</div>
+					</div>
+					<div class="bloque--tercio movil_bloque--full usuario bloques--flex">
+						<div class="usuario__check bloque--fijo">
+							<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+							<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+						</div>
+						<div class="bloque-fijo usuario__izq">
+							<img src="imgs/svg_othericons/profileicon01.svg" alt="Usuario" class="desktop_mb">
+							<hr class="franja mb no-movil bloque--full">
+							<button class="btn btn--mini no-movil mb js--usuario_btn--editar">Editar</button>
+							<button class="btn btn--mini no-movil js--usuario_btn--eliminar">Eliminar</button>
+						</div>
+						<hr class="franja--vert mr bloque-h--40 no-desktop">
+						<div class="bloque--grow usuario__der">
+							<div class="movil_bloque--mitad">
+								<h3 class="usuario__titulo">José Perez</h3>
+								<p class="usuario__rol desktop_mb">Vendedor</p>
+							</div>
+							<hr class="franja--vert mr bloque-h--40 no-desktop">
+							<hr class="franja mb no-movil bloque--full">
+							<p class="desktop_mb movil_bloque--mitad">
+								<span class="usuario__etiqueta">E-mail</span>
+								<span class="usuario__info">josep.965@gmail.com</span>
+							</p>
+							<hr class="franja mb no-movil bloque--full">
+							<p class="no-movil">
+								<span class="usuario__etiqueta">Usuario desde:</span>
+								<span class="usuario__info">03 / 04 /19</span>
+							</p>
+						</div>
+					</div>
+					<div class="bloque--tercio movil_bloque--full usuario bloques--flex">
+						<div class="usuario__check bloque--fijo">
+							<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+							<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+						</div>
+						<div class="bloque-fijo usuario__izq">
+							<img src="imgs/svg_othericons/profileicon01.svg" alt="Usuario" class="desktop_mb">
+							<hr class="franja mb no-movil bloque--full">
+							<button class="btn btn--mini no-movil mb js--usuario_btn--editar">Editar</button>
+							<button class="btn btn--mini no-movil js--usuario_btn--eliminar">Eliminar</button>
+						</div>
+						<hr class="franja--vert mr bloque-h--40 no-desktop">
+						<div class="bloque--grow usuario__der">
+							<div class="movil_bloque--mitad">
+								<h3 class="usuario__titulo">José Perez</h3>
+								<p class="usuario__rol desktop_mb">Vendedor</p>
+							</div>
+							<hr class="franja--vert mr bloque-h--40 no-desktop">
+							<hr class="franja mb no-movil bloque--full">
+							<p class="desktop_mb movil_bloque--mitad">
+								<span class="usuario__etiqueta">E-mail</span>
+								<span class="usuario__info">josep.965@gmail.com</span>
+							</p>
+							<hr class="franja mb no-movil bloque--full">
+							<p class="no-movil">
+								<span class="usuario__etiqueta">Usuario desde:</span>
+								<span class="usuario__info">03 / 04 /19</span>
+							</p>
+						</div>
+					</div>
+					<div class="bloque--tercio movil_bloque--full usuario bloques--flex">
+						<div class="usuario__check bloque--fijo">
+							<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+							<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+						</div>
+						<div class="bloque-fijo usuario__izq">
+							<img src="imgs/svg_othericons/profileicon01.svg" alt="Usuario" class="desktop_mb">
+							<hr class="franja mb no-movil bloque--full">
+							<button class="btn btn--mini no-movil mb js--usuario_btn--editar">Editar</button>
+							<button class="btn btn--mini no-movil js--usuario_btn--eliminar">Eliminar</button>
+						</div>
+						<hr class="franja--vert mr bloque-h--40 no-desktop">
+						<div class="bloque--grow usuario__der">
+							<div class="movil_bloque--mitad">
+								<h3 class="usuario__titulo">José Perez</h3>
+								<p class="usuario__rol desktop_mb">Vendedor</p>
+							</div>
+							<hr class="franja--vert mr bloque-h--40 no-desktop">
+							<hr class="franja mb no-movil bloque--full">
+							<p class="desktop_mb movil_bloque--mitad">
+								<span class="usuario__etiqueta">E-mail</span>
+								<span class="usuario__info">josep.965@gmail.com</span>
+							</p>
+							<hr class="franja mb no-movil bloque--full">
+							<p class="no-movil">
+								<span class="usuario__etiqueta">Usuario desde:</span>
+								<span class="usuario__info">03 / 04 /19</span>
+							</p>
+						</div>
+					</div>
+					<div class="bloque--tercio movil_bloque--full usuario bloques--flex">
+						<div class="usuario__check bloque--fijo">
+							<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+							<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+						</div>
+						<div class="bloque-fijo usuario__izq">
+							<img src="imgs/svg_othericons/profileicon01.svg" alt="Usuario" class="desktop_mb">
+							<hr class="franja mb no-movil bloque--full">
+							<button class="btn btn--mini no-movil mb js--usuario_btn--editar">Editar</button>
+							<button class="btn btn--mini no-movil js--usuario_btn--eliminar">Eliminar</button>
+						</div>
+						<hr class="franja--vert mr bloque-h--40 no-desktop">
+						<div class="bloque--grow usuario__der">
+							<div class="movil_bloque--mitad">
+								<h3 class="usuario__titulo">José Perez</h3>
+								<p class="usuario__rol desktop_mb">Vendedor</p>
+							</div>
+							<hr class="franja--vert mr bloque-h--40 no-desktop">
+							<hr class="franja mb no-movil bloque--full">
+							<p class="desktop_mb movil_bloque--mitad">
+								<span class="usuario__etiqueta">E-mail</span>
+								<span class="usuario__info">josep.965@gmail.com</span>
+							</p>
+							<hr class="franja mb no-movil bloque--full">
+							<p class="no-movil">
+								<span class="usuario__etiqueta">Usuario desde:</span>
+								<span class="usuario__info">03 / 04 /19</span>
+							</p>
+						</div>
+					</div>
+					<div class="bloque--tercio movil_bloque--full usuario bloques--flex">
+						<div class="usuario__check bloque--fijo">
+							<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+							<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+						</div>
+						<div class="bloque-fijo usuario__izq">
+							<img src="imgs/svg_othericons/profileicon01.svg" alt="Usuario" class="desktop_mb">
+							<hr class="franja mb no-movil bloque--full">
+							<button class="btn btn--mini no-movil mb js--usuario_btn--editar">Editar</button>
+							<button class="btn btn--mini no-movil js--usuario_btn--eliminar">Eliminar</button>
+						</div>
+						<hr class="franja--vert mr bloque-h--40 no-desktop">
+						<div class="bloque--grow usuario__der">
+							<div class="movil_bloque--mitad">
+								<h3 class="usuario__titulo">José Perez</h3>
+								<p class="usuario__rol desktop_mb">Vendedor</p>
+							</div>
+							<hr class="franja--vert mr bloque-h--40 no-desktop">
+							<hr class="franja mb no-movil bloque--full">
+							<p class="desktop_mb movil_bloque--mitad">
+								<span class="usuario__etiqueta">E-mail</span>
+								<span class="usuario__info">josep.965@gmail.com</span>
+							</p>
+							<hr class="franja mb no-movil bloque--full">
+							<p class="no-movil">
+								<span class="usuario__etiqueta">Usuario desde:</span>
+								<span class="usuario__info">03 / 04 /19</span>
+							</p>
+						</div>
+					</div>
+					<div class="bloque--tercio movil_bloque--full usuario bloques--flex">
+						<div class="usuario__check bloque--fijo">
+							<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+							<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+						</div>
+						<div class="bloque-fijo usuario__izq">
+							<img src="imgs/svg_othericons/profileicon01.svg" alt="Usuario" class="desktop_mb">
+							<hr class="franja mb no-movil bloque--full">
+							<button class="btn btn--mini no-movil mb js--usuario_btn--editar">Editar</button>
+							<button class="btn btn--mini no-movil js--usuario_btn--eliminar">Eliminar</button>
+						</div>
+						<hr class="franja--vert mr bloque-h--40 no-desktop">
+						<div class="bloque--grow usuario__der">
+							<div class="movil_bloque--mitad">
+								<h3 class="usuario__titulo">José Perez</h3>
+								<p class="usuario__rol desktop_mb">Vendedor</p>
+							</div>
+							<hr class="franja--vert mr bloque-h--40 no-desktop">
+							<hr class="franja mb no-movil bloque--full">
+							<p class="desktop_mb movil_bloque--mitad">
+								<span class="usuario__etiqueta">E-mail</span>
+								<span class="usuario__info">josep.965@gmail.com</span>
+							</p>
+							<hr class="franja mb no-movil bloque--full">
+							<p class="no-movil">
+								<span class="usuario__etiqueta">Usuario desde:</span>
+								<span class="usuario__info">03 / 04 /19</span>
+							</p>
+						</div>
+					</div>
+					<div class="bloque--tercio movil_bloque--full usuario bloques--flex">
+						<div class="usuario__check bloque--fijo">
+							<input type="checkbox" name="" class="input__checkbox" id="FS1RB00071852" value="">
+							<label for="FS1RB00071852" class="input__checkbox--label">&nbsp;</label>
+						</div>
+						<div class="bloque-fijo usuario__izq">
+							<img src="imgs/svg_othericons/profileicon01.svg" alt="Usuario" class="desktop_mb">
+							<hr class="franja mb no-movil bloque--full">
+							<button class="btn btn--mini no-movil mb js--usuario_btn--editar">Editar</button>
+							<button class="btn btn--mini no-movil js--usuario_btn--eliminar">Eliminar</button>
+						</div>
+						<hr class="franja--vert mr bloque-h--40 no-desktop">
+						<div class="bloque--grow usuario__der">
+							<div class="movil_bloque--mitad">
+								<h3 class="usuario__titulo">José Perez</h3>
+								<p class="usuario__rol desktop_mb">Vendedor</p>
+							</div>
+							<hr class="franja--vert mr bloque-h--40 no-desktop">
+							<hr class="franja mb no-movil bloque--full">
+							<p class="desktop_mb movil_bloque--mitad">
+								<span class="usuario__etiqueta">E-mail</span>
+								<span class="usuario__info">josep.965@gmail.com</span>
+							</p>
+							<hr class="franja mb no-movil bloque--full">
+							<p class="no-movil">
+								<span class="usuario__etiqueta">Usuario desde:</span>
+								<span class="usuario__info">03 / 04 /19</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<aside class="bloque--sidebar sidebar js--sidebar">
+			<div class="sidebar__hamb">
+				<button class="js--menu__hamb">
+					<img src="imgs/svg_othericons/hamburguericon--blanco.svg" alt="">
+				</button>
+			</div>
+			<nav class="sidebar__nav">
+				<ul>
+					<li>
+						<div class="bloques--reticula--centrado menu__btn">
+							<button class="js--menu__btn bloque--grow" data-menu="reportes"><div class="menu__link">Reportes</div></button>
+						</div>
+						<div class="menu__submenu js--submenu bloque--full" data-menu="reportes">
+							<ul>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/basicrespor_icondarkbg.svg" alt="basicrespor"></div>Reporte Básico
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/advancedreport_icondarkbg.svg" alt="advancedreport"></div>Reporte Avanzado
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="bloques--reticula--centrado menu__btn">
+							<button class="js--menu__btn bloque--grow" data-menu="archivo"><div class="menu__link">Archivo</div></button>
+							<div class="bloque--fijo">
+								<img src="/imgs/svg_othericons/statusicon_red.svg" alt="Status Red">
+							</div>
+						</div>
+						<div class="menu__submenu js--submenu bloque--full" data-menu="archivo">
+							<ul>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/myreports_icondarkbg.svg" alt="myreports"></div>Mis Reportes
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/completedreports_icondarkbg.svg" alt="completedreports"></div>Completados
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/searchreports_icondarkbg.svg" alt="searchreports"></div>Búsqueda
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="bloques--reticula--centrado menu__btn">
+							<button class="js--menu__btn bloque--grow" data-menu="ajustes"><div class="menu__link">Ajustes</div></button>
+						</div>
+						<div class="menu__submenu js--submenu bloque--full" data-menu="ajustes">
+							<ul>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/users_icondarkbg.svg" alt="users"></div>Usuarios
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/configuration_icondarkbg.svg" alt="configuration"></div>Configuración
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</aside>	
+	</main>
+
+	<footer id="" class="footer bloques--reticula">
+		<div class="bloque--sidebar sidebar__logo franja--der">
+			<a href="#">
+				<img src="imgs/svg_interfaceelements/logobaltra--blanco.svg" alt="Baltra">
+			</a>
+		</div>
+		<div class="bloques--reticula bloque--grow footer__contenido">
+			<div class="franja--der footer__link">
+				<a href="#">Términos & condiciones</a>
+			</div>
+			<div class="franja--der footer__link">
+				<a href="#">Políticas de privacidad</a>
+			</div>
+			<div class="franja--der footer__derechos">
+				<p>
+					GRUPO BALTRA TODOS LOS DERECHOS RESERVADOS
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<div class="lightwindow js--lightwindow--perfil bloques--renglones--centrado">
+		<div class="lightwindow__caja">
+			<header class="lightwindow__encabezado">
+				<h2 class="lightwindow__titulo">
+					Mi perfil
+				</h2>
+			</header>
+			<div class="lightwindow__contenido">
+				<div class="bloques--reticula mb">
+					<div class="bloque--fijo mr">
+						<img src="/imgs/svg_othericons/changeprofileicon.svg" alt="">
+					</div>
+					<div class="bloque--grow">
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Nombre
+							</label>
+							<input type="text" name="" class="input__field bloque--grow" value="Luis Díaz" id="form_name" placeholder="Nombre">
+						</div>
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Tipo de acceso
+							</label>
+							<input type="text" name="" class="input__field bloque--grow" value="Vendedor" id="form_name" placeholder="Tipo de acceso">
+						</div>
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Correo
+							</label>
+							<input type="email" name="" class="input__field bloque--grow" value="mail@baltra.mx" id="form_name" placeholder="Correo">
+						</div>
+					</div>
+				</div>
+				<hr class="franja">
+				<div class="input__contenedor bloque--full">
+					<div class="bloque--grow mr franjas_verticales"></div>
+					<label for="password" class="input__label input__label--chico input__label--left mr bloque--41">
+						Nueva Contraseña
+					</label>
+					<input type="password" name="" class="input__field bloque--30" id="password" placeholder="Nueva Contraseña">
+				</div>
+				<div class="input__contenedor bloque--full">
+					<div class="bloque--grow mr franjas_verticales"></div>
+					<label for="confirm_password" class="input__label input__label--chico input__label--left mr bloque--41">
+						Confirmar Contraseña
+					</label>
+					<input type="password" name="" class="input__field bloque--30" id="confirm_password" placeholder="Confirmar Contraseña">
+				</div>
+
+				<hr class="franja">
+				<div class="bloques--reticula--derecha">
+					<button class="btn js--lightwindow_btn--cerrar mr">Cancelar</button>
+					<input type="submit" value="Aceptar" class="btn">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lightwindow js--lightwindow--usuario_editar bloques--renglones--centrado">
+		<div class="lightwindow__caja">
+			<header class="lightwindow__encabezado lightwindow__encabezado--rojo">
+				<h2 class="lightwindow__titulo">
+					Editar usuario
+				</h2>
+			</header>
+			<div class="lightwindow__contenido">
+				<div class="bloques--reticula mb">
+					<div class="bloque--fijo mr">
+						<img src="/imgs/svg_othericons/changeprofileicon.svg" alt="">
+					</div>
+					<div class="bloque--grow">
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Nombre
+							</label>
+							<input type="text" name="" class="input__field bloque--grow" value="Luis Díaz" id="form_name" placeholder="Nombre">
+						</div>
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Tipo de acceso
+							</label>
+							<select name="" id="" class="input__field bloque--grow">
+								<option value="Vendedor">Vendedor</option>
+							</select>
+						</div>
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Correo
+							</label>
+							<input type="email" name="" class="input__field bloque--grow" value="mail@baltra.mx" id="form_name" placeholder="Correo">
+						</div>
+					</div>
+				</div>
+				<hr class="franja">
+				<div class="bloques--reticula">
+					<div class="input__contenedor bloque--45">
+						<label for="input40" class="input__label input__label--chico input__label--left mr bloque--grow">
+							Usuario
+						</label>
+						<input type="text" name="" class="input__field bloque--grow" id="input40" placeholder="Usuario">
+					</div>
+					<hr class="franja--vert ml mr bloque-h--40">
+					<div class="input__contenedor bloque--52">
+						<label for="input41" class="input__label input__label--chico input__label--left mr bloque--grow">
+							Contraseña
+						</label>
+						<input type="password" name="" class="input__field bloque--grow" id="input41" placeholder="Contraseña">
+					</div>
+				</div>
+
+				<hr class="franja">
+				<div class="bloques--reticula">
+					<div class="bloque--grow">
+						<div class="input__contenedor bloque--grow">
+							<input type="checkbox" name="" class="input__checkbox" id="login_remember" value="">
+							<label for="login_remember" class="input__checkbox--label input__leyenda">
+								Enviar usuario y contraseña por correo
+							</label>
+						</div>
+					</div>
+					<div class="bloques--reticula--derecha">
+						<button class="btn js--lightwindow_btn--cerrar mr">Cancelar</button>
+						<input type="submit" value="Aceptar" class="btn">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lightwindow js--lightwindow--usuario_eliminar bloques--renglones--centrado visible">
+		<div class="lightwindow__caja lightwindow__caja--chica">
+			<header class="lightwindow__encabezado lightwindow__encabezado--rojo">
+				<h2 class="lightwindow__titulo">
+					¿Eliminar a este usuario?
+				</h2>
+			</header>
+			<div class="lightwindow__contenido">
+				<div class="bloques--reticula mb">
+					<div class="bloque-fijo mr">
+						<img src="imgs/svg_othericons/profileicon01.svg" alt="Usuario" class="lightwindow__avatar">
+					</div>
+					<div class="bloque--grow">
+						<div class="movil_bloque--mitad">
+							<h3 class="usuario__titulo">José Perez</h3>
+							<p class="usuario__rol desktop_mb">Vendedor</p>
+						</div>
+						<hr class="franja mb no-movil bloque--full">
+						<p class="no-movil">
+							<span class="usuario__etiqueta">Usuario desde:</span> <br>
+							<span class="usuario__info">03 / 04 /19</span>
+						</p>
+					</div>
+				</div>
+				<hr class="franja">
+				<div class="bloques--reticula mb">
+					<div class="input__contenedor bloque--grow mr">
+						<input type="checkbox" name="" class="input__radio" id="input50" value="">
+						<label for="input50" class="input__radio--label">
+							Eliminar reportes
+						</label>
+					</div>
+					<div class="input__contenedor bloque--grow mr">
+						<input type="checkbox" name="" class="input__radio" id="input51" value="">
+						<label for="input51" class="input__radio--label">
+							Archivar reportes
+						</label>
+					</div>
+				</div>
+				<hr class="franja">
+				<div class="bloques--reticula--derecha">
+					<button class="btn js--lightwindow_btn--cerrar mr">Cancelar</button>
+					<input type="submit" value="Aceptar" class="btn">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lightwindow js--lightwindow--usuario_agregar bloques--renglones--centrado">
+		<div class="lightwindow__caja">
+			<header class="lightwindow__encabezado">
+				<h2 class="lightwindow__titulo">
+					Nuevo usuario
+				</h2>
+			</header>
+			<div class="lightwindow__contenido">
+				<div class="bloques--reticula mb">
+					<div class="bloque--fijo mr">
+						<img src="/imgs/svg_othericons/changeprofileicon.svg" alt="">
+					</div>
+					<div class="bloque--grow">
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Nombre
+							</label>
+							<input type="text" name="" class="input__field bloque--grow" value="Luis Díaz" id="form_name" placeholder="Nombre">
+						</div>
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Tipo de acceso
+							</label>
+							<select name="" id="" class="input__field bloque--grow">
+								<option value="Vendedor">Vendedor</option>
+							</select>
+						</div>
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Correo
+							</label>
+							<input type="email" name="" class="input__field bloque--grow" value="mail@baltra.mx" id="form_name" placeholder="Correo">
+						</div>
+					</div>
+				</div>
+				<hr class="franja">
+				<div class="bloques--reticula">
+					<div class="input__contenedor bloque--45">
+						<label for="input40" class="input__label input__label--chico input__label--left mr bloque--grow">
+							Usuario
+						</label>
+						<input type="text" name="" class="input__field bloque--grow" id="input40" placeholder="Usuario">
+					</div>
+					<hr class="franja--vert ml mr bloque-h--40">
+					<div class="input__contenedor bloque--52">
+						<label for="input41" class="input__label input__label--chico input__label--left mr bloque--grow">
+							Contraseña
+						</label>
+						<input type="password" name="" class="input__field bloque--grow" id="input41" placeholder="Contraseña">
+					</div>
+				</div>
+
+				<hr class="franja">
+				<div class="bloques--reticula">
+					<div class="bloque--grow">
+						<div class="input__contenedor bloque--grow">
+							<input type="checkbox" checked name="" class="input__checkbox" id="login_remember" value="">
+							<label for="login_remember" class="input__checkbox--label input__leyenda">
+								Enviar usuario y contraseña por correo
+							</label>
+						</div>
+					</div>
+					<div class="bloques--reticula--derecha">
+						<button class="btn js--lightwindow_btn--cerrar mr">Cancelar</button>
+						<input type="submit" value="Aceptar" class="btn">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lightwindow__bg js--lightwindow__bg visible"></div>
+
+</body>
+<script src="js/funciones-min.js"></script> 
+</html>

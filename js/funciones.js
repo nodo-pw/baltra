@@ -78,10 +78,38 @@ function menu(){
 		});
 	});
 }
+
+function lightwindows_cerrar() {
+	if ( has_Class(lightw.perfil, 'visible') ) {
+		lightw.perfil.classList.remove("visible");
+	}
+	if ( has_Class(lightw.lw_usuario_editar, 'visible') ) {
+		lightw.lw_usuario_editar.classList.remove("visible");
+	}
+	if ( has_Class(lightw.lw_usuario_eliminar, 'visible') ) {
+		lightw.lw_usuario_eliminar.classList.remove("visible");
+	}
+	if ( has_Class(lightw.lw_usuario_agregar, 'visible') ) {
+		lightw.lw_usuario_agregar.classList.remove("visible");
+	}
+	if ( has_Class(lightw.bg, 'visible') ) {
+		lightw.bg.classList.remove("visible");
+	}
+}
+
 function lightwindow() {
 	lightw.btn_perfil = document.querySelector(".js--lightwindow_btn--perfil");
 	lightw.perfil = document.querySelector(".js--lightwindow--perfil");
 	lightw.cerrar = document.querySelectorAll(".js--lightwindow_btn--cerrar");
+
+	lightw.btn_editar_user = document.querySelectorAll(".js--usuario_btn--editar");
+	lightw.btn_eliminar_user = document.querySelectorAll(".js--usuario_btn--eliminar");
+	lightw.btn_agregar_user = document.querySelectorAll(".js--usuario_btn--agregar");
+
+
+	lightw.lw_usuario_editar = document.querySelector(".js--lightwindow--usuario_editar");
+	lightw.lw_usuario_eliminar = document.querySelector(".js--lightwindow--usuario_eliminar");
+	lightw.lw_usuario_agregar = document.querySelector(".js--lightwindow--usuario_agregar");
 
 	if ( lightw.btn_perfil ) {
 		lightw.btn_perfil.addEventListener('click', function () {
@@ -97,22 +125,48 @@ function lightwindow() {
 
 	Array.prototype.forEach.call(lightw.cerrar, function(btn){
 		btn.addEventListener("click", function() {
-			if ( has_Class(lightw.perfil, 'visible') || has_Class(lightw.bg, 'visible') ) {
-				lightw.perfil.classList.remove("visible");
-				lightw.bg.classList.remove("visible");
+			lightwindows_cerrar();
+		});
+	});
+
+	Array.prototype.forEach.call(lightw.btn_editar_user, function(btn){
+		btn.addEventListener("click", function() {
+			if ( !has_Class(lightw.bg, 'visible') ) {
+				lightw.bg.classList.add("visible");
+			}
+			if ( !has_Class(lightw.lw_usuario_editar, 'visible') ) {
+				lightw.lw_usuario_editar.classList.add("visible");
+			}
+		});
+	});
+
+	Array.prototype.forEach.call(lightw.btn_eliminar_user, function(btn){
+		btn.addEventListener("click", function() {
+			if ( !has_Class(lightw.bg, 'visible') ) {
+				lightw.bg.classList.add("visible");
+			}
+			if ( !has_Class(lightw.lw_usuario_eliminar, 'visible') ) {
+				lightw.lw_usuario_eliminar.classList.add("visible");
+			}
+		});
+	});
+
+	Array.prototype.forEach.call(lightw.btn_agregar_user, function(btn){
+		btn.addEventListener("click", function() {
+			if ( !has_Class(lightw.bg, 'visible') ) {
+				lightw.bg.classList.add("visible");
+			}
+			if ( !has_Class(lightw.lw_usuario_agregar, 'visible') ) {
+				lightw.lw_usuario_agregar.classList.add("visible");
 			}
 		});
 	});
 }
 
 document.addEventListener('keyup', function(e){
-	console.log(e.keyCode)
 	// esc
 	if ( e.code === "Escape" || e.keyCode === 27 ) {
-		if ( has_Class(lightw.perfil, 'visible') || has_Class(lightw.bg, 'visible') ) {
-			lightw.perfil.classList.remove("visible");
-			lightw.bg.classList.remove("visible");
-		}
+		lightwindows_cerrar()
 
 		if ( has_Class(enc.menu, 'visible') ) {
 			enc.menu.classList.remove('visible');
