@@ -565,6 +565,10 @@ section.contenido
 	bg url(imgs/svg_dividers/horizaontal_dividerline.svg) repeat-y 0 top, url(imgs/svg_dividers/horizaontal_dividerline.svg) repeat-y calc( 100% / 8 * 1 ) top, url(imgs/svg_dividers/horizaontal_dividerline.svg) repeat-y calc( 100% / 8 * 2 ) top, url(imgs/svg_dividers/horizaontal_dividerline.svg) repeat-y calc( 100% / 8 * 3 ) top, url(imgs/svg_dividers/horizaontal_dividerline.svg) repeat-y calc( 100% / 8 * 4 ) top, url(imgs/svg_dividers/horizaontal_dividerline.svg) repeat-y calc( 100% / 8 * 5 ) top, url(imgs/svg_dividers/horizaontal_dividerline.svg) repeat-y calc( 100% / 8 * 6 ) top, url(imgs/svg_dividers/horizaontal_dividerline.svg) repeat-y calc( 100% / 8 * 7 ) top, url(imgs/svg_dividers/horizaontal_dividerline.svg) repeat-y calc( 100% / 8 * 8 ) top
 	background-size auto 1px
 
+.icon__triangulo
+	margin 0 10px
+	display inline-block
+
 .input
 	&__checkbox
 	&__radio
@@ -644,6 +648,9 @@ section.contenido
 		&--roja
 			bg color__rojo
 			color blanco
+		&--negra
+			bg #3a3c39
+			color blanco
 		&--azul
 			bg #94b5bf
 			color #bad7e2
@@ -668,6 +675,8 @@ section.contenido
 		&:disabled
 		&--disabled
 			background color__fondo
+			&--roja
+				color color__rojo
 		&--correct
 			background #bae2c5
 		&--azul
@@ -720,9 +729,11 @@ section.contenido
 			max-width 100vw
 	&__caja
 		max-width 757px
-		width 90%
+		width 95%
 		&--chica
 			max-width 550px
+		&--grande
+			max-width 1000px
 	&__contenido
 		bg #e0e0e0
 		padding 1.9rem 1.9rem
@@ -736,7 +747,6 @@ section.contenido
 		font-size 1.25rem
 		font-weight 700
 		inter 1
-
 
 .login
 	align-items(center)
@@ -857,9 +867,11 @@ section.contenido
 	&__nav
 		padding 1.5rem
 
-// .tablero
-// 	&__principal
-// 	&__sidebar
+.tablero
+	// &__principal
+	&__sidebar
+		width 25%
+		min-width 260px
 
 .tabla
 	border 0
@@ -941,6 +953,16 @@ section.contenido
 			uppercase()
 		&--negro
 			border-top 10px solid #3a3c39
+	&--secundario
+		border-top 10px solid color__rojo
+		flex()
+		padding-top 1.5rem
+		span
+			font-size 1rem
+			font-weight 700
+			margin-left 10px
+			padding-bottom 8px
+			uppercase()
 
 .usuario
 	background url(imgs/svg_dividers/dividerline.svg)  repeat-x bottom left
@@ -1153,6 +1175,9 @@ section.contenido
 			&--label
 				&:before
 					margin-right 0.5rem
+		&__etiqueta
+			align-items(center)
+			flex()
 		&__label
 		&__field
 			margin-bottom 0.5rem
@@ -1172,19 +1197,28 @@ section.contenido
 	// .bloques--reticula--around
 	.movil_bloques--reticula__renglon
 		flex-direction(column)
+	.movil_bloque--grow
+		-webkit-flex-grow: 1
+		flex-grow: 1
 	.movil_bloque--mitad
 	.movil_bloque--50
 		width calc(50% - 0.5rem) !important
 	.movil_bloque--full
 		width 100% !important
+	.movil_bloque--15
+		width 15% !important
 	.movil_bloque--22
 		width 22% !important
 	.movil_bloque--30
 		width 30% !important
+	.movil_bloque--40
+		width 40% !important
 	.movil_bloque--58
 		width 58% !important
 	.movil_input__label--izq
 		text-align left
+	.movil_input__label--roja
+		bg color__rojo
 	.movil_mb
 		margin-bottom 0.5rem !important
 	.movil_ml
@@ -1313,6 +1347,18 @@ section.contenido
 			img
 				height 28px
 				margin-right 10px
+		&--secundario
+			align-items(center)
+			background #efefef
+			border-top 10px solid color__rojo
+			justify-content(flex-start)
+			padding 1em 2vw
+			text-align left
+			width 100%
+			span
+				background none
+				margin 0
+				padding-bottom 0
 	.titulos
 		&__contendor
 			flex-direction(column)

@@ -80,20 +80,35 @@ function menu(){
 }
 
 function lightwindows_cerrar() {
-	if ( has_Class(lightw.perfil, 'visible') ) {
-		lightw.perfil.classList.remove("visible");
+	if ( lightw.perfil ) {
+		if ( has_Class(lightw.perfil, 'visible') ) {
+			lightw.perfil.classList.remove("visible");
+		}
 	}
-	if ( has_Class(lightw.lw_usuario_editar, 'visible') ) {
-		lightw.lw_usuario_editar.classList.remove("visible");
+	if ( lightw.lw_usuario_editar ) {
+		if ( has_Class(lightw.lw_usuario_editar, 'visible') ) {
+			lightw.lw_usuario_editar.classList.remove("visible");
+		}
 	}
-	if ( has_Class(lightw.lw_usuario_eliminar, 'visible') ) {
-		lightw.lw_usuario_eliminar.classList.remove("visible");
+	if ( lightw.lw_usuario_eliminar ) {
+		if ( has_Class(lightw.lw_usuario_eliminar, 'visible') ) {
+			lightw.lw_usuario_eliminar.classList.remove("visible");
+		}
 	}
-	if ( has_Class(lightw.lw_usuario_agregar, 'visible') ) {
-		lightw.lw_usuario_agregar.classList.remove("visible");
+	if ( lightw.lw_usuario_agregar ) {
+		if ( has_Class(lightw.lw_usuario_agregar, 'visible') ) {
+			lightw.lw_usuario_agregar.classList.remove("visible");
+		}
 	}
-	if ( has_Class(lightw.bg, 'visible') ) {
-		lightw.bg.classList.remove("visible");
+	if ( lightw.lw_config_actualizar ) {
+		if ( has_Class(lightw.lw_config_actualizar, 'visible') ) {
+			lightw.lw_config_actualizar.classList.remove("visible");
+		}
+	}
+	if ( lightw.bg ) {
+		if ( has_Class(lightw.bg, 'visible') ) {
+			lightw.bg.classList.remove("visible");
+		}
 	}
 }
 
@@ -105,11 +120,14 @@ function lightwindow() {
 	lightw.btn_editar_user = document.querySelectorAll(".js--usuario_btn--editar");
 	lightw.btn_eliminar_user = document.querySelectorAll(".js--usuario_btn--eliminar");
 	lightw.btn_agregar_user = document.querySelectorAll(".js--usuario_btn--agregar");
+	lightw.btn_actualizar_config = document.querySelectorAll(".js--config_btn--actualizar");
 
 
 	lightw.lw_usuario_editar = document.querySelector(".js--lightwindow--usuario_editar");
 	lightw.lw_usuario_eliminar = document.querySelector(".js--lightwindow--usuario_eliminar");
 	lightw.lw_usuario_agregar = document.querySelector(".js--lightwindow--usuario_agregar");
+
+	lightw.lw_config_actualizar = document.querySelector(".js--lightwindow--configuraciones");
 
 	if ( lightw.btn_perfil ) {
 		lightw.btn_perfil.addEventListener('click', function () {
@@ -158,6 +176,17 @@ function lightwindow() {
 			}
 			if ( !has_Class(lightw.lw_usuario_agregar, 'visible') ) {
 				lightw.lw_usuario_agregar.classList.add("visible");
+			}
+		});
+	});
+
+	Array.prototype.forEach.call(lightw.btn_actualizar_config, function(btn){
+		btn.addEventListener("click", function() {
+			if ( !has_Class(lightw.bg, 'visible') ) {
+				lightw.bg.classList.add("visible");
+			}
+			if ( !has_Class(lightw.lw_config_actualizar, 'visible') ) {
+				lightw.lw_config_actualizar.classList.add("visible");
 			}
 		});
 	});

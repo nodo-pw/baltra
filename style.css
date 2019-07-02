@@ -676,6 +676,10 @@ section.contenido {
   background: url("imgs/svg_dividers/horizaontal_dividerline.svg") repeat-y 0 top, url("imgs/svg_dividers/horizaontal_dividerline.svg") repeat-y calc(100% / 8 * 1) top, url("imgs/svg_dividers/horizaontal_dividerline.svg") repeat-y calc(100% / 8 * 2) top, url("imgs/svg_dividers/horizaontal_dividerline.svg") repeat-y calc(100% / 8 * 3) top, url("imgs/svg_dividers/horizaontal_dividerline.svg") repeat-y calc(100% / 8 * 4) top, url("imgs/svg_dividers/horizaontal_dividerline.svg") repeat-y calc(100% / 8 * 5) top, url("imgs/svg_dividers/horizaontal_dividerline.svg") repeat-y calc(100% / 8 * 6) top, url("imgs/svg_dividers/horizaontal_dividerline.svg") repeat-y calc(100% / 8 * 7) top, url("imgs/svg_dividers/horizaontal_dividerline.svg") repeat-y calc(100% / 8 * 8) top;
   background-size: auto 1px;
 }
+.icon__triangulo {
+  margin: 0 10px;
+  display: inline-block;
+}
 .input__checkbox,
 .input__radio {
   display: none;
@@ -776,6 +780,10 @@ section.contenido {
   background: #c22026;
   color: #fff;
 }
+.input__label--negra {
+  background: #3a3c39;
+  color: #fff;
+}
 .input__label--azul {
   background: #94b5bf;
   color: #bad7e2;
@@ -802,6 +810,10 @@ section.contenido {
 .input__field:disabled,
 .input__field--disabled {
   background: #e0e0e0;
+}
+.input__field:disabled--roja,
+.input__field--disabled--roja {
+  color: #c22026;
 }
 .input__field--correct {
   background: #bae2c5;
@@ -867,10 +879,13 @@ section.contenido {
 }
 .lightwindow__caja {
   max-width: 757px;
-  width: 90%;
+  width: 95%;
 }
 .lightwindow__caja--chica {
   max-width: 550px;
+}
+.lightwindow__caja--grande {
+  max-width: 1000px;
 }
 .lightwindow__contenido {
   background: #e0e0e0;
@@ -1058,6 +1073,10 @@ section.contenido {
 .sidebar__nav {
   padding: 1.5rem;
 }
+.tablero__sidebar {
+  width: 25%;
+  min-width: 260px;
+}
 .tabla {
   border: 0;
 }
@@ -1159,6 +1178,20 @@ section.contenido {
 }
 .titulo--principal--negro {
   border-top: 10px solid #3a3c39;
+}
+.titulo--secundario {
+  border-top: 10px solid #c22026;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1.5rem;
+}
+.titulo--secundario span {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 10px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
 }
 .usuario {
   background: url("imgs/svg_dividers/dividerline.svg") repeat-x bottom left;
@@ -1421,6 +1454,14 @@ section.contenido {
   .input__checkbox--label:before {
     margin-right: 0.5rem;
   }
+  .input__etiqueta {
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .input__label,
   .input__field {
     margin-bottom: 0.5rem;
@@ -1444,6 +1485,10 @@ section.contenido {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
   }
+  .movil_bloque--grow {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+  }
   .movil_bloque--mitad,
   .movil_bloque--50 {
     width: calc(50% - 0.5rem) !important;
@@ -1451,17 +1496,26 @@ section.contenido {
   .movil_bloque--full {
     width: 100% !important;
   }
+  .movil_bloque--15 {
+    width: 15% !important;
+  }
   .movil_bloque--22 {
     width: 22% !important;
   }
   .movil_bloque--30 {
     width: 30% !important;
   }
+  .movil_bloque--40 {
+    width: 40% !important;
+  }
   .movil_bloque--58 {
     width: 58% !important;
   }
   .movil_input__label--izq {
     text-align: left;
+  }
+  .movil_input__label--roja {
+    background: #c22026;
   }
   .movil_mb {
     margin-bottom: 0.5rem !important;
@@ -1639,6 +1693,24 @@ section.contenido {
   .titulo--principal img {
     height: 28px;
     margin-right: 10px;
+  }
+  .titulo--secundario {
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    background: #efefef;
+    border-top: 10px solid #c22026;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    padding: 1em 2vw;
+    text-align: left;
+    width: 100%;
+  }
+  .titulo--secundario span {
+    background: none;
+    margin: 0;
+    padding-bottom: 0;
   }
   .titulos__contendor {
     flex-direction: column;

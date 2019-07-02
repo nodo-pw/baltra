@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Baltra - Configuración</title>
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="theme-color" content="#C22026">
+</head>
+
+<body>
+	<header role="banner" class="encabezado bloques--reticula">
+		<div class="menu__hamb">
+			<button class="js--menu__hamb">
+				<img src="imgs/svg_othericons/hamburguericon.svg" alt="">
+			</button>
+		</div>
+		<div class="bloque--sidebar sidebar__logo franja--der">
+			<a href="#">
+				<img src="imgs/svg_interfaceelements/logobaltra--gris.svg" alt="Baltra">
+			</a>
+		</div>
+		<div class="encabezado__usuario contenido">
+			<figure class="encabezado__avatar franja--der">
+				<img src="imgs/svg_othericons/profileicon01.svg" alt="Usuario">
+			</figure>
+			<div class="encabezado__persona">
+				<span class="encabezado__nombre">Francisco Sevilla</span>
+				<span class="encabezado__rol">Administrador</span>
+			</div>
+			<div class="encabezado__menu">
+				<button class="encabezado__icono js--encabezado__icono">
+					<img src="/imgs/svg_interfaceelements/profilemenu.svg" alt="Menu">
+				</button>
+				<div class="encabezado__perfil js--encabezado__perfil">
+					<ul>
+						<li>
+							<button class="js--lightwindow_btn--perfil">Editar Mi Perfil</button>
+						</li>
+						<li>
+							<a href="">Logout</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main role='main' class="main bloques--flex">
+		<section class="contenido">
+
+			<!--  -->
+			<header class="bloques--reticula mb titulos__contendor">
+				<h1 class="bloque--fijo titulo--principal movil_mb">
+					<figure>
+						<img src="/imgs/svg_iconswhite/configuration_iconwhitebg.svg" alt="Configuración" class="no-movil">
+						<img src="/imgs/svg_iconsdark/configuration_icondarkbg.svg" alt="Configuración" class="no-desktop">
+					</figure>
+					<span class="">
+						Configuración
+					</span>
+				</h1>
+				
+				<div class="bloque--grow align--center bloques--reticula--derecha">
+					<span class="mr franja--der franja--izq"><button class="btn ml mr js--config_btn--actualizar">Actualizar Muestra</button></span>
+					<span class="mr franja--der"><button class="btn mr">Guardar</button></span>
+				</div>
+			</header>
+
+			<hr class="franja mb">
+
+			<div class="bloques--reticula tablero">
+				<div class="bloque--grow mr tablero__principal">
+					<div class="bloques--reticula__renglon mb">
+						<div class="bloque--mitad movil_bloque--mitad">
+							<strong>Último cambio</strong> | 29 / 04 / 19
+						</div>
+						<div class="bloque--mitad desktop_txt--der movil_bloque--mitad">
+							<strong class="no-movil">Cambio realizado por</strong> | Francisco Sevilla
+						</div>
+					</div>
+
+					<hr class="franja">
+
+					<div class="input__contenedor">
+						<label for="input_50" class="input__label input__label--der movil_input__label--izq bloque--13 movil_bloque--15 mr">
+							Tasa
+						</label>
+						<input type="text" name="" class="input__field bloque--13 mr" value="15.00" id="input_50" placeholder="Tasa">
+						<span class="input__etiqueta mr">%</span>
+						<hr class="franja--vert mr bloque-h--40 va-t no-movil">
+						<label for="input_50" class="input__label bloque--34 movil_bloque--40 mr">
+							Comisión por apertura
+						</label>
+						<input type="text" name="" class="input__field bloque--13 mr" value="3.00" id="input_50" placeholder="Comisión por apertura">
+						<span class="input__etiqueta mr">%</span>
+						<hr class="franja--vert mr bloque-h--40 va-t no-movil">
+					</div>
+
+					<hr class="franja">
+
+					<div class="bloques--flex">
+						<div class="input__contenedor bloque--mitad movil_bloque--full">
+							<label for="input_52" class="input__label input__label--der bloque--grow movil_input__label--izq movil_bloque--50 mr">
+								Valor de GPS | Sin IVA
+							</label>
+							<input type="text" name="" class="input__field mr bloque--22 movil_bloque--30" value="500.00" id="input_52" placeholder="Valor de GPS | Sin IVA">
+							<span class="input__etiqueta mr">MXN</span>
+						</div>
+						<hr class="franja--vert mr bloque-h--40 va-t no-movil">
+						<div class="input__contenedor bloque--mitad movil_bloque--full">
+							<label for="input_52" class="input__label bloque--grow movil_bloque--50 mr">
+								Valor de GPS | Con IVA
+							</label>
+							<input type="text" name="" class="input__field mr bloque--22 movil_bloque--30" value="$ 580.00 MXN" id="input_52" placeholder="Valor de GPS | Con IVA">
+							<span class="input__etiqueta mr no-desktop">MXN</span>
+						</div>
+					</div>
+
+					<div class="bloques--flex">
+						<div class="input__contenedor bloque--mitad movil_bloque--full">
+							<label for="input_52" class="input__label input__label--der bloque--grow movil_input__label--izq movil_bloque--50 mr">
+								Valor Llave +  | Sin IVA
+							</label>
+							<input type="text" name="" class="input__field mr bloque--22 movil_bloque--30" value="500.00" id="input_52" placeholder="Valor Llave +  | Sin IVA">
+							<span class="input__etiqueta mr">MXN</span>
+						</div>
+						<hr class="franja--vert mr bloque-h--40 va-t no-movil">
+						<div class="input__contenedor bloque--mitad movil_bloque--full">
+							<label for="input_52" class="input__label bloque--grow movil_bloque--50 mr">
+								Valor Llave +  | Con IVA
+							</label>
+							<input type="text" name="" class="input__field mr bloque--22 movil_bloque--30" value="$ 580.00 MXN" id="input_52" placeholder="Valor Llave +  | Con IVA">
+							<span class="input__etiqueta mr no-desktop">MXN</span>
+						</div>
+					</div>
+				</div>
+
+				<hr class="franja--vert mr no-movil">
+
+				<div class="bloque--fijo tablero__sidebar no-movil">
+					<div class="bloques--reticula__renglon">
+						<div class="input__contenedor input__contenedor--vertical bloque--mitad">
+							<label for="input_1" class="input__label input__label--roja bloque--full">
+								Tasa
+							</label>
+							<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="15.00%" id="input_1" placeholder="Tasa">
+						</div>
+						<div class="input__contenedor input__contenedor--vertical bloque--mitad">
+							<label for="input_1" class="input__label input__label--roja bloque--full">
+								TIR
+							</label>
+							<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="18.52%" id="input_1" placeholder="TIR">
+						</div>
+					</div>
+					<hr class="franja no-movil">
+					<div class="input__contenedor input__contenedor--vertical mb bloque--full">
+						<label for="input_1" class="input__label input__label--roja bloque--full">
+							Comisión por apertura
+						</label>
+						<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="$ 0,000.00 MXN" id="input_1" placeholder="Comisión por apertura">
+					</div>
+				</div>
+			</div>
+
+			<!--  -->
+			<hr class="franja no-mb">
+			<header class="bloques--reticula mb titulos__contendor">
+				<h2 class="bloque--fijo titulo--secundario movil_mb">
+					<span class="">
+						Categorías para vendedores
+					</span>
+				</h2>
+				
+				<div class="bloque--grow align--center bloques--reticula--derecha">
+					<span class="mr franja--der franja--izq"><button class="btn ml mr js--config_btn--actualizar">Actualizar Muestra</button></span>
+					<span class="mr franja--der"><button class="btn mr">Guardar</button></span>
+				</div>
+			</header>
+
+			<hr class="franja mb">
+
+			<div class="bloques--reticula tablero">
+				<div class="bloque--grow mr tablero__principal">
+					<div class="bloques--reticula__renglon">
+						<div class="input__contenedor bloque--tercio movil_bloque--50">
+							<label for="input_50" class="input__label bloque--45 movil_bloque--40 mr">
+								Baltra-0
+							</label>
+							<input type="text" name="" class="input__field bloque--grow movil_bloque--40 mr" value="15.00" id="input_50" placeholder="Tasa">
+							<span class="input__etiqueta mr">%</span>
+						</div>
+						<hr class="franja--vert bloque-h--40">
+												<div class="input__contenedor bloque--tercio movil_bloque--50">
+							<label for="input_50" class="input__label bloque--45 movil_bloque--40 mr">
+								Baltra-1
+							</label>
+							<input type="text" name="" class="input__field bloque--grow movil_bloque--40 mr" value="15.00" id="input_50" placeholder="Tasa">
+							<span class="input__etiqueta mr">%</span>
+						</div>
+						<hr class="franja--vert bloque-h--40">
+												<div class="input__contenedor bloque--tercio movil_bloque--50">
+							<label for="input_50" class="input__label bloque--45 movil_bloque--40 mr">
+								Baltra-2
+							</label>
+							<input type="text" name="" class="input__field bloque--grow movil_bloque--40 mr" value="15.00" id="input_50" placeholder="Tasa">
+							<span class="input__etiqueta mr">%</span>
+						</div>
+						<hr class="franja--vert bloque-h--40 no-desktop">
+												<div class="input__contenedor bloque--tercio movil_bloque--50">
+							<label for="input_50" class="input__label bloque--45 movil_bloque--40 mr">
+								Baltra-3
+							</label>
+							<input type="text" name="" class="input__field bloque--grow movil_bloque--40 mr" value="15.00" id="input_50" placeholder="Tasa">
+							<span class="input__etiqueta mr">%</span>
+						</div>
+						<hr class="franja--vert bloque-h--40">
+												<div class="input__contenedor bloque--tercio movil_bloque--50">
+							<label for="input_50" class="input__label bloque--45 movil_bloque--40 mr">
+								Baltra-4
+							</label>
+							<input type="text" name="" class="input__field bloque--grow movil_bloque--40 mr" value="15.00" id="input_50" placeholder="Tasa">
+							<span class="input__etiqueta mr">%</span>
+						</div>
+						<hr class="franja--vert bloque-h--40">
+												<div class="input__contenedor bloque--tercio movil_bloque--50">
+							<label for="input_50" class="input__label bloque--45 movil_bloque--40 mr">
+								Baltra-5
+							</label>
+							<input type="text" name="" class="input__field bloque--grow movil_bloque--40 mr" value="15.00" id="input_50" placeholder="Tasa">
+							<span class="input__etiqueta mr">%</span>
+						</div>
+						<hr class="franja--vert bloque-h--40 no-desktop">
+					</div>
+				</div>
+
+				<hr class="franja--vert mr no-movil">
+
+				<div class="bloque--fijo tablero__sidebar no-movil">
+					<div class="input__contenedor input__contenedor--vertical mb bloque--full">
+						<label for="input_1" class="input__label input__label--roja bloque--full">
+							Porcentajes categorías
+						</label>
+					</div>
+					<div class="bloques--reticula">
+						<label for="input_1" class="input__label mr">
+							B1
+						</label>
+						<input type="text" name="" class="input__field bloque--grow input__field--disabled mr" disabled value="30.00%" id="input_1" placeholder="Tasa">
+						<label for="input_1" class="input__label mr">
+							B2
+						</label>
+						<input type="text" name="" class="input__field bloque--grow input__field--disabled" disabled value="30.00%" id="input_1" placeholder="Tasa">
+					</div>
+					<div class="bloques--reticula">
+						<label for="input_1" class="input__label mr">
+							B3
+						</label>
+						<input type="text" name="" class="input__field bloque--grow input__field--disabled mr" disabled value="30.00%" id="input_1" placeholder="Tasa">
+						<label for="input_1" class="input__label mr">
+							B4
+						</label>
+						<input type="text" name="" class="input__field bloque--grow input__field--disabled" disabled value="30.00%" id="input_1" placeholder="Tasa">
+					</div>
+					<div class="bloques--reticula">
+						<label for="input_1" class="input__label mr">
+							B5
+						</label>
+						<input type="text" name="" class="input__field bloque--grow input__field--disabled mr" disabled value="30.00%" id="input_1" placeholder="Tasa">
+						<label for="input_1" class="input__label mr">
+							B6
+						</label>
+						<input type="text" name="" class="input__field bloque--grow input__field--disabled" disabled value="30.00%" id="input_1" placeholder="Tasa">
+					</div>
+				</div>
+			</div>
+
+			<!--  -->
+			<hr class="franja no-mb">
+			<header class="bloques--reticula mb titulos__contendor">
+				<h2 class="bloque--fijo titulo--secundario movil_mb">
+					<span class="">
+						Comisión para vendedores
+					</span>
+				</h2>
+				
+				<div class="bloque--grow align--center bloques--reticula--derecha">
+					<span class="mr franja--der franja--izq"><button class="btn ml mr js--config_btn--actualizar">Actualizar Muestra</button></span>
+					<span class="mr franja--der"><button class="btn mr">Guardar</button></span>
+				</div>
+			</header>
+
+			<hr class="franja mb">
+
+			<div class="bloques--reticula tablero">
+				<div class="bloque--grow mr tablero__principal">
+					<div class="bloques--reticula__renglon">
+						<div class="input__contenedor bloque--tercio movil_bloque--50">
+							<label for="input_50" class="input__label bloque--45 movil_bloque--40 mr">
+								Baltra-0
+							</label>
+							<input type="text" name="" class="input__field bloque--grow movil_bloque--40 mr" value="15.00" id="input_50" placeholder="Tasa">
+							<span class="input__etiqueta mr">%</span>
+						</div>
+						<hr class="franja--vert bloque-h--40">
+												<div class="input__contenedor bloque--tercio movil_bloque--50">
+							<label for="input_50" class="input__label bloque--45 movil_bloque--40 mr">
+								Baltra-1
+							</label>
+							<input type="text" name="" class="input__field bloque--grow movil_bloque--40 mr" value="15.00" id="input_50" placeholder="Tasa">
+							<span class="input__etiqueta mr">%</span>
+						</div>
+						<hr class="franja--vert bloque-h--40">
+												<div class="input__contenedor bloque--tercio movil_bloque--50">
+							<label for="input_50" class="input__label bloque--45 movil_bloque--40 mr">
+								Baltra-2
+							</label>
+							<input type="text" name="" class="input__field bloque--grow movil_bloque--40 mr" value="15.00" id="input_50" placeholder="Tasa">
+							<span class="input__etiqueta mr">%</span>
+						</div>
+						<hr class="franja--vert bloque-h--40 no-desktop">
+												<div class="input__contenedor bloque--tercio movil_bloque--50">
+							<label for="input_50" class="input__label bloque--45 movil_bloque--40 mr">
+								Baltra-3
+							</label>
+							<input type="text" name="" class="input__field bloque--grow movil_bloque--40 mr" value="15.00" id="input_50" placeholder="Tasa">
+							<span class="input__etiqueta mr">%</span>
+						</div>
+						<hr class="franja--vert bloque-h--40">
+												<div class="input__contenedor bloque--tercio movil_bloque--50">
+							<label for="input_50" class="input__label bloque--45 movil_bloque--40 mr">
+								Baltra-4
+							</label>
+							<input type="text" name="" class="input__field bloque--grow movil_bloque--40 mr" value="15.00" id="input_50" placeholder="Tasa">
+							<span class="input__etiqueta mr">%</span>
+						</div>
+						<hr class="franja--vert bloque-h--40">
+												<div class="input__contenedor bloque--tercio movil_bloque--50">
+							<label for="input_50" class="input__label bloque--45 movil_bloque--40 mr">
+								Baltra-5
+							</label>
+							<input type="text" name="" class="input__field bloque--grow movil_bloque--40 mr" value="15.00" id="input_50" placeholder="Tasa">
+							<span class="input__etiqueta mr">%</span>
+						</div>
+						<hr class="franja--vert bloque-h--40 no-desktop">
+					</div>
+				</div>
+
+				<hr class="franja--vert mr no-movil">
+
+				<div class="bloque--fijo tablero__sidebar no-movil">
+					<div class="input__contenedor input__contenedor--vertical mb bloque--full">
+						<label for="input_1" class="input__label input__label--roja bloque--full">
+							Porcentajes categorías
+						</label>
+					</div>
+					<div class="bloques--reticula">
+						<label for="input_1" class="input__label mr">
+							B1
+						</label>
+						<input type="text" name="" class="input__field bloque--grow input__field--disabled mr" disabled value="30.00%" id="input_1" placeholder="Tasa">
+						<label for="input_1" class="input__label mr">
+							B2
+						</label>
+						<input type="text" name="" class="input__field bloque--grow input__field--disabled" disabled value="30.00%" id="input_1" placeholder="Tasa">
+					</div>
+					<div class="bloques--reticula">
+						<label for="input_1" class="input__label mr">
+							B3
+						</label>
+						<input type="text" name="" class="input__field bloque--grow input__field--disabled mr" disabled value="30.00%" id="input_1" placeholder="Tasa">
+						<label for="input_1" class="input__label mr">
+							B4
+						</label>
+						<input type="text" name="" class="input__field bloque--grow input__field--disabled" disabled value="30.00%" id="input_1" placeholder="Tasa">
+					</div>
+					<div class="bloques--reticula">
+						<label for="input_1" class="input__label mr">
+							B5
+						</label>
+						<input type="text" name="" class="input__field bloque--grow input__field--disabled mr" disabled value="30.00%" id="input_1" placeholder="Tasa">
+						<label for="input_1" class="input__label mr">
+							B6
+						</label>
+						<input type="text" name="" class="input__field bloque--grow input__field--disabled" disabled value="30.00%" id="input_1" placeholder="Tasa">
+					</div>
+				</div>
+			</div>
+
+			<!--  -->
+			<hr class="franja no-mb">
+			<header class="bloques--reticula mb titulos__contendor">
+				<h2 class="bloque--fijo titulo--principal titulo--principal--negro movil_mb">
+					<figure>
+						<img src="/imgs/svg_iconswhite/myreports_iconwhitebg.svg" alt="Reporte Muestra" class="no-movil">
+						<img src="/imgs/svg_iconsdark/myreports_icondarkbg.svg" alt="Reporte Muestra" class="no-desktop">
+					</figure>
+					<span class="">
+						Reporte Muestra
+					</span>
+				</h2>
+
+				<div class="bloque--grow align--center bloques--reticula--derecha">
+					<span class="mr franja--der franja--izq"><button class="btn ml mr">Imprimir</button></span>
+				</div>
+			</header>
+			
+			<hr class="franja">
+
+			<div class="bloques--reticula tablero">
+				<div class="bloque--grow mr tablero__principal">
+					<div class="input__contenedor">
+						<label for="input_60" class="input__label input__label--der movil_input__label--izq bloque--30 mr">
+							Tipo de arrendamiento
+						</label>
+						<input type="text" name="" class="input__field input__field--disabled bloque--13 movil_bloque--22 mr" disabled value="Coche" id="input_60" placeholder="Tipo de arrendamiento">
+
+						<input type="text" name="" class="input__field bloque--grow" value="Modelo Ejemplo" id="input_3" placeholder="Tipo de arrendamiento">
+					</div>
+
+					<div class="bloques--flex">
+						<label for="input_4" class="input__label input__label--der bloque--30 mr movil_input__label--izq">
+							Valor total
+						</label>
+						<div class="input__contenedor bloque--37 desktop_mr movil_bloque--full">
+							<input type="text" name="" class="input__field bloque--grow mr" value="230,000.00" id="input_4" placeholder="Valor total">
+
+							<input type="text" name="" class="input__field bloque--30" disabled value="MXN" id="input_60" placeholder="Valor total">
+
+						</div>
+
+						<hr class="franja--vert mr bloque-h--40 no-movil">
+
+						<div class="input__contenedor bloque--grow movil_bloque--full">
+							<label for="input_5" class="input__label input__label--centrado bloque--fijo mr movil_input__label--izq">
+								Plazo
+							</label>
+							<select name="" id="input_5" class="input__field bloque--grow">
+								<option value="48 meses">48 meses</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="bloques--flex">
+						<label for="input_6" class="input__label input__label--der bloque--30 mr movil_bloque--50">
+							Valor residual
+						</label>
+						<div class="input__contenedor bloque--37 movil_bloque--50 desktop_mr">
+							<input type="text" name="" class="input__field bloque--22 mr" value="35" id="input_6" placeholder="Comisión por apertura">
+							<span class="input__etiqueta mr">%</span>
+							<input type="text" name="" class="input__field input__field--disabled  desktop_mr movil_bloque--58" disabled value="$ 2,000.00 MXN" id="" placeholder="">
+						</div>
+						<hr class="franja--vert mr bloque-h--40 no-movil">
+					</div>
+
+					<div class="bloques--flex">
+						<label for="input_6" class="input__label input__label--der bloque--30 mr movil_bloque--50">
+							Pago inicial
+						</label>
+						<div class="input__contenedor bloque--37 movil_bloque--50 desktop_mr">
+							<input type="text" name="" class="input__field bloque--22 mr" value="10" id="input_6" placeholder="Comisión por apertura">
+							<span class="input__etiqueta mr">%</span>
+							<input type="text" name="" class="input__field input__field--disabled  desktop_mr movil_bloque--58" disabled value="$ 2,000.00 MXN" id="" placeholder="">
+						</div>
+						<hr class="franja--vert mr bloque-h--40 no-movil">
+					</div>
+
+					<div class="bloques--flex">
+						<label for="input_9" class="input__label input__label--der bloque--30 mr movil_bloque--50">
+							Depósito en garantía
+						</label>
+						<input type="text" name="" class="input__field bloque--37 movil_bloque--50 mr" value="$ 28,000.00" id="input_9" placeholder="Depósito en garantía">
+						<hr class="franja--vert mr bloque-h--40 no-movil">
+					</div>
+
+					<div class="bloques--flex">
+						<label for="input_9" class="input__label input__label--der bloque--30 mr movil_bloque--50">
+							Categoría
+						</label>
+						<select name="" id="" class="input__field bloque--37 movil_bloque--50 mr">
+							<option value="Baltra - 1A">Baltra - 1A</option>
+						</select>
+						<hr class="franja--vert mr bloque-h--40 no-movil">
+					</div>
+
+					<hr class="franja">
+
+					<div class="bloques--flex">
+						<label for="input_10" class="input__label input__label--der bloque--30 desktop_mr movil_input__label--izq">
+							Descuento Proveedor
+						</label>
+						<div class="input__contenedor bloque--37 mr movil_bloque--full">
+							<input type="text" name="" class="input__field bloque--41 mr movil_bloque--50" value="10,000.00" id="input_10" placeholder="Descuento Proveedor">
+							<input type="text" name="" class="input__field input__field--disabled bloque--grow desktop_mr movil_bloque--50" disabled value="8.20 %" id="input_10" placeholder="Descuento Proveedor">
+						</div>
+
+						<hr class="franja--vert mr bloque-h--40 no-movil">
+
+					</div>
+
+					<div class="bloques--flex">
+						<label for="input_11" class="input__label input__label--der bloque--30 desktop_mr movil_input__label--izq">
+							Equipo GPS Cotizado
+						</label>
+						<div class="input__contenedor bloque--37 desktop_mr movil_bloque--58">
+							<select name="" id="" class="input__field bloque--34 mr movil_bloque--30">
+								<option value="Sí">Sí</option>
+							</select>
+							<hr class="franja--vert mr bloque-h--40 va-t">
+							<input type="text" name="" class="input__field input__field--disabled mr movil_bloque--58" disabled value="$ 2,000.00 MXN" id="input_11" placeholder="Equipo GPS Cotizado">
+						</div>
+						<hr class="franja--vert mr bloque-h--40">
+						<p class="input__leyenda movil_bloque--30">
+							* Precio con IVA mensual
+						</p>
+					</div>
+					<div class="bloques--flex">
+						<label for="input_11" class="input__label input__label--der bloque--30 desktop_mr movil_input__label--izq">
+							Equipo GPS por fuera
+						</label>
+						<div class="input__contenedor bloque--37 desktop_mr movil_bloque--58">
+							<select name="" id="" class="input__field bloque--34 mr movil_bloque--30">
+								<option value="Sí">Sí</option>
+							</select>
+							<hr class="franja--vert mr bloque-h--40 va-t">
+							<input type="text" name="" class="input__field input__field--disabled mr movil_bloque--58" disabled value="$ 2,000.00 MXN" id="input_11" placeholder="Equipo GPS por fuera">
+						</div>
+						<hr class="franja--vert mr bloque-h--40">
+					</div>
+					<div class="bloques--flex">
+						<label for="input_11" class="input__label input__label--der bloque--30 desktop_mr movil_input__label--izq">
+							Llave adicional
+						</label>
+						<div class="input__contenedor bloque--37 desktop_mr movil_bloque--58">
+							<select name="" id="" class="input__field bloque--34 mr movil_bloque--30">
+								<option value="Sí">Sí</option>
+							</select>
+							<hr class="franja--vert mr bloque-h--40 va-t">
+							<input type="text" name="" class="input__field input__field--disabled mr movil_bloque--58" disabled value="$ 2,000.00 MXN" id="input_11" placeholder="Llave adicional">
+						</div>
+						<hr class="franja--vert mr bloque-h--40">
+						<p class="input__leyenda movil_bloque--30">
+							* Este importe es con IVA incluído
+						</p>
+					</div>
+				</div>
+				<hr class="franja--vert mr">
+
+				<div class="bloque--fijo tablero__sidebar movil_bloque--full">
+					<div class="bloques--reticula__renglon">
+						<div class="input__contenedor input__contenedor--vertical bloque--mitad">
+							<label for="input_1" class="input__label input__label--negra movil_input__label--roja bloque--full">
+								Tasa
+							</label>
+							<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="15.00%" id="input_1" placeholder="Tasa">
+						</div>
+						<div class="input__contenedor input__contenedor--vertical bloque--mitad">
+							<label for="input_1" class="input__label input__label--negra movil_input__label--roja bloque--full">
+								TIR
+							</label>
+							<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="18.52%" id="input_1" placeholder="TIR">
+						</div>
+					</div>
+					<hr class="franja no-movil">
+					<div class="input__contenedor input__contenedor--vertical">
+						<label for="input_1" class="input__label input__label--negra movil_input__label--roja bloque--full">
+							Mensualidad
+						</label>
+						<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="$ 0,000.00 MXN" id="input_1" placeholder="Mensualidad">
+					</div>
+					<hr class="franja no-movil">
+					<div class="input__contenedor input__contenedor--vertical">
+						<label for="input_1" class="input__label input__label--negra movil_input__label--roja bloque--full">
+							Comisión por apertura
+						</label>
+						<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="$ 0,000.00 MXN" id="input_1" placeholder="Comisión por apertura">
+					</div>
+					<hr class="franja no-movil">
+					<div class="bloques--reticula__renglon input__contenedor--vertical">
+						<label for="" class="input__label input__label--negra movil_input__label--roja bloque--full movil_bloque--full">
+							Gastos de Arrendamientos
+						</label>
+						<div class="input__contenedor bloque--full movil_bloque--full">
+							<hr class="franja--vert mr bloque-h--40 va-t">
+							<span class="input__etiqueta mr">GA-I</span>
+							<input type="text" name="" class="input__field input__field--disabled  bloque--grow" disabled value="$ 2,000.00 MXN" id="" placeholder="">
+						</div>
+						<div class="input__contenedor bloque--full movil_bloque--full">
+							<hr class="franja--vert mr bloque-h--40 va-t">
+							<span class="input__etiqueta mr">GA-M</span>
+							<input type="text" name="" class="input__field input__field--disabled  bloque--grow" disabled value="$ 2,000.00 MXN" id="" placeholder="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<aside class="bloque--sidebar sidebar js--sidebar">
+			<div class="sidebar__hamb">
+				<button class="js--menu__hamb">
+					<img src="imgs/svg_othericons/hamburguericon--blanco.svg" alt="">
+				</button>
+			</div>
+			<nav class="sidebar__nav">
+				<ul>
+					<li>
+						<div class="bloques--reticula--centrado menu__btn">
+							<button class="js--menu__btn bloque--grow" data-menu="reportes"><div class="menu__link">Reportes</div></button>
+						</div>
+						<div class="menu__submenu js--submenu bloque--full" data-menu="reportes">
+							<ul>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/basicrespor_icondarkbg.svg" alt="basicrespor"></div>Reporte Básico
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/advancedreport_icondarkbg.svg" alt="advancedreport"></div>Reporte Avanzado
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="bloques--reticula--centrado menu__btn">
+							<button class="js--menu__btn bloque--grow" data-menu="archivo"><div class="menu__link">Archivo</div></button>
+							<div class="bloque--fijo">
+								<img src="/imgs/svg_othericons/statusicon_red.svg" alt="Status Red">
+							</div>
+						</div>
+						<div class="menu__submenu js--submenu bloque--full" data-menu="archivo">
+							<ul>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/myreports_icondarkbg.svg" alt="myreports"></div>Mis Reportes
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/completedreports_icondarkbg.svg" alt="completedreports"></div>Completados
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/searchreports_icondarkbg.svg" alt="searchreports"></div>Búsqueda
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="bloques--reticula--centrado menu__btn">
+							<button class="js--menu__btn bloque--grow" data-menu="ajustes"><div class="menu__link">Ajustes</div></button>
+						</div>
+						<div class="menu__submenu js--submenu bloque--full" data-menu="ajustes">
+							<ul>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/users_icondarkbg.svg" alt="users"></div>Usuarios
+									</a>
+								</li>
+								<li>
+									<a href="#" class="menu__sublink">
+										<div class="menu__icon"><img src="/imgs/svg_iconsdark/configuration_icondarkbg.svg" alt="configuration"></div>Configuración
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</aside>	
+	</main>
+
+	<footer id="" class="footer bloques--reticula">
+		<div class="bloque--sidebar sidebar__logo franja--der">
+			<a href="#">
+				<img src="imgs/svg_interfaceelements/logobaltra--blanco.svg" alt="Baltra">
+			</a>
+		</div>
+		<div class="bloques--reticula bloque--grow footer__contenido">
+			<div class="franja--der footer__link">
+				<a href="#">Términos & condiciones</a>
+			</div>
+			<div class="franja--der footer__link">
+				<a href="#">Políticas de privacidad</a>
+			</div>
+			<div class="franja--der footer__derechos">
+				<p>
+					GRUPO BALTRA TODOS LOS DERECHOS RESERVADOS
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<div class="lightwindow js--lightwindow--perfil bloques--renglones--centrado">
+		<div class="lightwindow__caja">
+			<header class="lightwindow__encabezado">
+				<h2 class="lightwindow__titulo">
+					Mi perfil
+				</h2>
+			</header>
+			<div class="lightwindow__contenido">
+				<div class="bloques--reticula mb">
+					<div class="bloque--fijo mr">
+						<img src="/imgs/svg_othericons/changeprofileicon.svg" alt="">
+					</div>
+					<div class="bloque--grow">
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Nombre
+							</label>
+							<input type="text" name="" class="input__field bloque--grow" value="Luis Díaz" id="form_name" placeholder="Nombre">
+						</div>
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Tipo de acceso
+							</label>
+							<input type="text" name="" class="input__field bloque--grow" value="Vendedor" id="form_name" placeholder="Tipo de acceso">
+						</div>
+						<div class="input__contenedor bloque--full">
+							<label for="form_name" class="input__label input__label--chico mr bloque--fijo">
+								Correo
+							</label>
+							<input type="email" name="" class="input__field bloque--grow" value="mail@baltra.mx" id="form_name" placeholder="Correo">
+						</div>
+					</div>
+				</div>
+				<hr class="franja">
+				<div class="input__contenedor bloque--full">
+					<div class="bloque--grow mr franjas_verticales"></div>
+					<label for="password" class="input__label input__label--chico input__label--left mr bloque--41">
+						Nueva Contraseña
+					</label>
+					<input type="password" name="" class="input__field bloque--30" id="password" placeholder="Nueva Contraseña">
+				</div>
+				<div class="input__contenedor bloque--full">
+					<div class="bloque--grow mr franjas_verticales"></div>
+					<label for="confirm_password" class="input__label input__label--chico input__label--left mr bloque--41">
+						Confirmar Contraseña
+					</label>
+					<input type="password" name="" class="input__field bloque--30" id="confirm_password" placeholder="Confirmar Contraseña">
+				</div>
+
+				<hr class="franja">
+				<div class="bloques--reticula--derecha">
+					<button class="btn js--lightwindow_btn--cerrar mr">Cancelar</button>
+					<input type="submit" value="Aceptar" class="btn">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lightwindow js--lightwindow--configuraciones bloques--renglones--centrado">
+		<div class="lightwindow__caja lightwindow__caja--grande">
+			<header class="lightwindow__encabezado lightwindow__encabezado--rojo">
+				<h2 class="lightwindow__titulo">
+					¿Seguro que desea modificar estos valores?
+				</h2>
+			</header>
+			<div class="lightwindow__contenido">
+				<div class="bloques--reticula">
+					<div class="bloques--reticula--centrado bloque--mitad mb">
+						<div class="input__contenedor input__contenedor--vertical bloque--45">
+							<label for="input_1" class="input__label input__label--negra bloque--full">
+								Tasa Anterior
+							</label>
+							<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="$ 0,000.00 MXN" id="input_1" placeholder="Mensualidad">
+						</div>
+						<img src="/imgs/svg_othericons/triangle_red.svg" alt="" class="icon__triangulo" width="8">
+						<div class="input__contenedor input__contenedor--vertical bloque--45">
+							<label for="input_1" class="input__label input__label--roja bloque--full">
+								Tasa Nueva
+							</label>
+							<input type="text" name="" class="input__field bloque--full input__field--disabled input__field--disabled--rojo" disabled value="$ 0,000.00 MXN" id="input_1" placeholder="Mensualidad">
+						</div>
+					</div>
+
+					<hr class="franja--vert no-movil">
+
+					<div class="bloques--reticula--centrado bloque--mitad mb">
+						<div class="input__contenedor input__contenedor--vertical bloque--45">
+							<label for="input_1" class="input__label input__label--negra bloque--full">
+								Comisión apertura
+							</label>
+							<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="$ 0,000.00 MXN" id="input_1" placeholder="Mensualidad">
+						</div>
+						<img src="/imgs/svg_othericons/triangle_red.svg" alt="" class="icon__triangulo" width="8">
+						<div class="input__contenedor input__contenedor--vertical bloque--45">
+							<label for="input_1" class="input__label input__label--roja bloque--full">
+								Comisión Nueva
+							</label>
+							<input type="text" name="" class="input__field bloque--full input__field--disabled input__field--disabled--rojo" disabled value="$ 0,000.00 MXN" id="input_1" placeholder="Mensualidad">
+						</div>
+					</div>
+				</div>
+				<hr class="franja">
+
+				<div class="bloques--reticula">
+					<div class="bloques--reticula--centrado bloque--mitad mb">
+						<div class="input__contenedor input__contenedor--vertical bloque--45">
+							<label for="input_1" class="input__label input__label--negra bloque--full">
+								GPS Anterior
+							</label>
+							<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="$ 0,000.00 MXN" id="input_1" placeholder="Mensualidad">
+						</div>
+						<img src="/imgs/svg_othericons/triangle_red.svg" alt="" class="icon__triangulo" width="8">
+						<div class="input__contenedor input__contenedor--vertical bloque--45">
+							<label for="input_1" class="input__label input__label--roja bloque--full">
+								GPS Nueva
+							</label>
+							<input type="text" name="" class="input__field bloque--full input__field--disabled input__field--disabled--rojo" disabled value="$ 0,000.00 MXN" id="input_1" placeholder="Mensualidad">
+						</div>
+					</div>
+
+					<hr class="franja--vert no-movil">
+
+					<div class="bloques--reticula--centrado bloque--mitad mb">
+						<div class="input__contenedor input__contenedor--vertical bloque--45">
+							<label for="input_1" class="input__label input__label--negra bloque--full">
+								Llave Extra
+							</label>
+							<input type="text" name="" class="input__field bloque--full input__field--disabled" disabled value="$ 0,000.00 MXN" id="input_1" placeholder="Mensualidad">
+						</div>
+						<img src="/imgs/svg_othericons/triangle_red.svg" alt="" class="icon__triangulo" width="8">
+						<div class="input__contenedor input__contenedor--vertical bloque--45">
+							<label for="input_1" class="input__label input__label--roja bloque--full">
+								Llave Extra Nueva
+							</label>
+							<input type="text" name="" class="input__field bloque--full input__field--disabled input__field--disabled--rojo" disabled value="$ 0,000.00 MXN" id="input_1" placeholder="Mensualidad">
+						</div>
+					</div>
+				</div>
+
+				<hr class="franja">
+				<div class="bloques--reticula--derecha">
+					<button class="btn js--lightwindow_btn--cerrar mr">Cancelar</button>
+					<input type="submit" value="Aceptar" class="btn">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lightwindow__bg js--lightwindow__bg"></div>
+
+</body>
+<script src="js/funciones-min.js"></script> 
+</html>
