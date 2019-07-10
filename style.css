@@ -1049,7 +1049,6 @@ section.contenido {
 .sidebar {
   background: #3a3c39;
   border-top: 10px solid #c22026;
-  height: 100%;
   order: 1;
   -webkit-order: 1;
 }
