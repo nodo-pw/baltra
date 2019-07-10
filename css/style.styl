@@ -24,7 +24,7 @@ color__rojo = #C22026
 color__gris__oscuro = #3A3C39
 
 max_width = 1200px
-med_query = 720px
+med_query = 800px
 
 // Estilos de fuentes
 // @import "style--fonts.styl"
@@ -320,7 +320,7 @@ table
 	height 40px
 
 .bloque--sidebar
-	width 300px
+	width 280px
 	-webkit-flex-shrink: 0
 	flex-shrink: 0
 
@@ -865,7 +865,7 @@ section.contenido
 		&:after
 			height 38px !important
 	&__nav
-		padding 1.5rem
+		padding 1.5rem 1.2rem
 
 .tablero
 	// &__principal
@@ -964,6 +964,14 @@ section.contenido
 			padding-bottom 8px
 			uppercase()
 
+.titulos__contendor
+	flex-wrap(wrap)
+	.desktop_mr
+	.mr
+		margin-right 8px !important
+	& > * 
+		margin-bottom 15px
+
 .usuario
 	background url(imgs/svg_dividers/dividerline.svg)  repeat-x bottom left
 	background-size auto 3px
@@ -1055,12 +1063,99 @@ section.contenido
 
 @media screen and (max-width : 1024px)
 	.bloque--sidebar
-		width 300px
+		width 250px
+	.sidebar
+		&__nav
+			padding 1.5rem 1rem
 
 @media screen and (max-width : 900px)
 	.bloque--cuarto
 	.bloque--tercio
 		width 49%
+	.encabezado
+		min-height 0
+		height auto
+		padding 10px 0
+		&__botones
+			justify-content(space-between)
+			padding 0 2vw
+			.franja--izq
+				&:before
+					hide() !important
+			.franja--der:last-child
+				&:after
+					hide() !important
+		&__persona
+			hide()
+		&__avatar
+			padding-right 0
+			margin-right 10px
+			img
+				height 35px
+				width 35px
+				block()
+			&.franja--der
+				&:after
+					hide() !important
+		&__icono
+			height 35px
+			margin-left 0
+			width 7px
+			img
+				height 25px
+			&:hover
+				bg none
+		&__usuario
+			width 70px
+			padding-right 15px
+			padding-left 0
+		.sidebar__logo
+			&.franja--der
+				&:after
+					hide() !important
+			img
+				max-width 45vw
+	.menu
+	.sidebar
+		&__hamb
+			block()
+			img
+				height 25px
+	.menu
+		&__hamb
+			width 70px
+			button
+				padding 0 15px
+	.sidebar
+		fixed()
+		border-top 0
+		border-right 10px #e0e0e0 solid
+		left -100%
+		max-height 100vh
+		min-height 100%
+		top 0
+		transicion 0.3s all ease
+		z-index 300
+		&.visible
+			left 0
+		&__hamb
+			padding 15px
+			relative()
+			bg #2d2d2d
+			&:after
+				absolute()
+				background url(imgs/svg_dividers/dividerline_2.svg) repeat-x left bottom
+				background-size 1px auto
+				block()
+				bottom 0
+				content ''
+				height 2px
+				left 0
+				width 100%
+		&__nav
+			padding 1.5rem
+			overflow auto
+			max-height calc( 100vh - 3em - 55px )
 
 @media screen and (min-width : med_query)
 	.desktop_txt--der
@@ -1108,49 +1203,6 @@ section.contenido
 		margin-right 0 !important
 	.desktop_mt
 		margin-top 0 !important
-	.encabezado
-		min-height 0
-		height auto
-		padding 10px 0
-		&__botones
-			justify-content(space-between)
-			padding 0 2vw
-			.franja--izq
-				&:before
-					hide() !important
-			.franja--der:last-child
-				&:after
-					hide() !important
-		&__persona
-			hide()
-		&__avatar
-			padding-right 0
-			margin-right 10px
-			img
-				height 35px
-				width 35px
-				block()
-			&.franja--der
-				&:after
-					hide() !important
-		&__icono
-			height 35px
-			margin-left 0
-			width 7px
-			img
-				height 25px
-			&:hover
-				bg none
-		&__usuario
-			width 70px
-			padding-right 15px
-			padding-left 0
-		.sidebar__logo
-			&.franja--der
-				&:after
-					hide() !important
-			img
-				max-width 45vw
 	.footer
 		&__contenido
 			flex-direction(column)
@@ -1181,17 +1233,6 @@ section.contenido
 		&__label
 		&__field
 			margin-bottom 0.5rem
-	.menu
-	.sidebar
-		&__hamb
-			block()
-			img
-				height 25px
-	.menu
-		&__hamb
-			width 70px
-			button
-				padding 0 15px
 	// .bloques--reticula
 	// .bloques--reticula--centrado
 	// .bloques--reticula--around
@@ -1231,35 +1272,6 @@ section.contenido
 		flex()
 	.no-movil
 		hide()
-	.sidebar
-		fixed()
-		border-top 0
-		border-right 10px #e0e0e0 solid
-		left -100%
-		max-height 100vh
-		top 0
-		transicion 0.3s all ease
-		z-index 300
-		&.visible
-			left 0
-		&__hamb
-			padding 15px
-			relative()
-			bg #2d2d2d
-			&:after
-				absolute()
-				background url(imgs/svg_dividers/dividerline_2.svg) repeat-x left bottom
-				background-size 1px auto
-				block()
-				bottom 0
-				content ''
-				height 2px
-				left 0
-				width 100%
-		&__nav
-			padding 1.5rem
-			overflow auto
-			max-height calc( 100vh - 3em - 55px )
 	.tabla
 		td
 			padding 2px 0
